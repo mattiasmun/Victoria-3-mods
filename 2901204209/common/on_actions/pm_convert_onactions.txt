@@ -1,0 +1,29 @@
+﻿on_diplomatic_play_started = {
+	events = {
+		pm_convert_event.3
+	}
+}
+
+on_wargoal_enforced = {
+	events = {
+		pm_convert_event.2
+	}
+}
+
+on_diplo_play_back_down = {
+	events = {
+		pm_convert_event.2
+	}
+}
+
+on_peace_agreement_signed_war_leader = {
+	events = {
+		pm_convert_event.2
+	}
+}
+
+on_peace_agreement_signed_war_participant = {
+	events = {
+		pm_convert_event.2
+	}
+}

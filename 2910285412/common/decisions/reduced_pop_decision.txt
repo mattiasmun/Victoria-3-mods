@@ -1,0 +1,27 @@
+reduced_pop_decision = {
+	is_shown = {
+		any_scope_pop = {
+			culture = cu:tobedeleted
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			NOT = { has_modifier = modifier_reduced_pop }
+		}
+	}
+
+	when_taken = {
+		random_primary_culture = {
+			save_scope_as = scope_primary_deleted
+		}
+		every_scope_pop ={
+			limit = {
+				culture = cu:tobedeleted
+			}
+			change_pop_culture = { target = scope:scope_primary_deleted value = 1 }
+		}			
+	}
+
+	ai_chance = 100
+}

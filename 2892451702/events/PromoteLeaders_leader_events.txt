@@ -1,0 +1,81 @@
+﻿namespace = PromoteLeaders_Events
+
+PromoteLeaders_Events.1 = {
+	type = country_event
+	placement = root
+
+	title = PromoteLeaders_Events.1.t
+	desc = PromoteLeaders_Events.1.d
+	flavor = PromoteLeaders_Events.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = ""
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {}
+
+	immediate = {
+	}
+	
+	option = { # MAX ALL LEADERS
+		name = PromoteLeaders_Events.1.1a
+		trigger = {
+			OR = {
+				any_scope_general = { exists = yes commander_rank <= 4 is_ruler = no }
+				any_scope_admiral = { exists = yes commander_rank <= 4 is_ruler = no }
+			}
+		}
+		every_scope_general = {
+			limit = {
+				exists = yes commander_rank <= 4 is_ruler = no
+			}
+			set_commander_rank = 5
+		}
+		every_scope_admiral = {
+			limit = {
+				exists = yes commander_rank <= 4 is_ruler = no
+			}
+			set_commander_rank = 5
+		}
+	}
+	
+	option = { # MAX ALL GENERALS
+		name = PromoteLeaders_Events.1.1b
+		trigger = {
+			any_scope_general = { exists = yes commander_rank <= 4 is_ruler = no }
+		}
+		every_scope_general = {
+			limit = {
+				exists = yes commander_rank <= 4 is_ruler = no
+			}
+			set_commander_rank = 5
+		}
+	}
+	
+	option = { # MAX ALL ADMIRALS
+		name = PromoteLeaders_Events.1.1c
+		trigger = {
+			any_scope_admiral = { exists = yes commander_rank <= 4 is_ruler = no }
+		}
+		every_scope_admiral = {
+			limit = {
+				exists = yes commander_rank <= 4 is_ruler = no
+			}
+			set_commander_rank = 5
+		}
+	}
+	
+	option = { # EXIT
+		name = PromoteLeaders_Events.1.1d
+		trigger = {
+			always = yes
+		}
+	}
+}

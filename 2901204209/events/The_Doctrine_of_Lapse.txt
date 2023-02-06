@@ -1,0 +1,149 @@
+raj.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = raj.2.t
+	desc = raj.2.d
+	flavor = raj.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/asia_hinduism_sikhism.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/hinduism_sikhism"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	minor_left_icon = c:BIC
+	#minor_right_icon = scope:doctrine_of_lapse_target_country
+
+	immediate = {
+		random_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					is_player = no
+					OR = {
+						has_government_type = gov_princely_state_hindu
+						has_government_type = gov_princely_state_muslim
+					}
+				}
+			}
+			save_scope_as = doctrine_of_lapse_target_state_1
+		}
+		random_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					is_player = no
+					OR = {
+						has_government_type = gov_princely_state_hindu
+						has_government_type = gov_princely_state_muslim
+					}
+				}
+				NOT = { this = scope:doctrine_of_lapse_target_state_1 }
+			}
+			save_scope_as = doctrine_of_lapse_target_state_2
+		}
+		random_state = {
+			limit = {
+				owner = {
+					is_subject_of = ROOT
+					is_player = no
+					OR = {
+						has_government_type = gov_princely_state_hindu
+						has_government_type = gov_princely_state_muslim
+					}
+				}
+				NOT = { this = scope:doctrine_of_lapse_target_state_1 }
+				NOT = { this = scope:doctrine_of_lapse_target_state_2 }
+			}
+			save_scope_as = doctrine_of_lapse_target_state_3
+		}
+	}
+
+	option = {
+		name = raj.2.a
+		default_option = yes
+		scope:doctrine_of_lapse_target_state_1 = {
+			set_state_owner = ROOT
+			add_radicals = {
+				value = very_large_radicals
+			}
+		}
+        if = {
+            limit = {
+                is_player = yes
+            }
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 20
+            }
+        }
+        else_if = {
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 10
+            }           
+        }
+	}
+
+	option = {
+		name = raj.2.b
+		trigger = {
+			exists = scope:doctrine_of_lapse_target_state_2
+		}
+		scope:doctrine_of_lapse_target_state_2 = {
+			set_state_owner = ROOT
+			add_radicals = {
+				value = very_large_radicals
+			}
+		}
+        if = {
+            limit = {
+                is_player = yes
+            }
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 20
+            }
+        }
+        else_if = {
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 10
+            }           
+        }
+	}
+	
+	option = {
+		name = raj.2.c
+		trigger = {
+			exists = scope:doctrine_of_lapse_target_state_3
+		}
+		scope:doctrine_of_lapse_target_state_3 = {
+			set_state_owner = ROOT
+			add_radicals = {
+				value = very_large_radicals
+			}
+		}
+        if = {
+            limit = {
+                is_player = yes
+            }
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 20
+            }
+        }
+        else_if = {
+            create_incident = {
+                country = scope:doctrine_of_lapse_target_state_1.owner
+                value = 10
+            }           
+        }
+	}
+}

@@ -1,0 +1,22 @@
+﻿
+tobedeleted={
+	color={ 255 178 102 }
+	religion = catholic
+	traits = { german_speaking european_heritage }
+	male_common_first_names = {
+		Wayan
+	}
+	female_common_first_names = {
+		Wayan
+	}	
+	noble_last_names = {
+		I_Gusti
+	}
+	common_last_names = {
+		Ngakan
+	}
+	ethnicities = {
+		1 = caucasian
+	}
+	graphics = asian
+}

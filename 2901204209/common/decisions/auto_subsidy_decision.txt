@@ -1,0 +1,33 @@
+switch_auto_subsidy_decision = {
+	is_shown = {
+		is_player = yes
+	}
+
+	possible = {
+		always = yes
+	}
+
+	ai_chance = {
+		base = 0
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				has_modifier = auto_subsidy_modifier
+			}
+			remove_modifier = auto_subsidy_modifier
+		}
+		else_if = {
+			limit = {
+				NOT = { has_modifier = auto_subsidy_modifier }
+			}
+			add_modifier = {
+				name = auto_subsidy_modifier
+				years = -1
+			}
+		}
+	}
+}
+
+

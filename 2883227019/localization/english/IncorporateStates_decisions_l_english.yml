@@ -1,0 +1,3 @@
+﻿l_english:
+ incorporate_states:0 "Incorporate the Unincorporated"
+ incorporate_states_desc:0 "All states belonging to you will be incorporated instantly. AI is unable to take this decision. "

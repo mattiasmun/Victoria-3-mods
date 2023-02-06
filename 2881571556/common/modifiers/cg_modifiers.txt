@@ -1,0 +1,3 @@
+cg_test_modifier ={
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+}

@@ -1,0 +1,18 @@
+﻿on_yearly_pulse_country = {
+	on_actions = {
+		SM_on_yearly_pulse_country_cleanup
+	}
+}
+
+SM_on_yearly_pulse_country_cleanup = {
+	effect = {
+		if = {
+			limit = {
+				has_modifier = SM_block_industrial_expansion
+				is_subject = no
+			}
+			remove_modifier = SM_block_industrial_expansion
+		}
+	}
+
+}

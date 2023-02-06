@@ -1,0 +1,12 @@
+{
+  "name" : "Extended building map list",
+  "id" : "2890952298",
+  "version" : "1.2",
+  "supported_game_version" : "1.1.*",
+  "short_description" : "Changed GUI for Building Construction List. Several new columns have been added containing data relevant to building decisions.",
+  "tags" : ["Economy And Buildings", "Graphics", "Utilities"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

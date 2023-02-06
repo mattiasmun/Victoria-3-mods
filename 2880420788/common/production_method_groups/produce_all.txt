@@ -1,0 +1,7 @@
+﻿pmg_all_operations = {
+	production_methods = {
+		pm_building_all_disabled
+		pm_building_all_basic
+		pm_building_all_advanced
+	}
+}

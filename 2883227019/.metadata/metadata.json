@@ -1,0 +1,12 @@
+{
+  "name" : "Incorporate States",
+  "id" : "",
+  "version" : "1.0.1",
+  "supported_game_version" : "1.1.*",
+  "short_description" : "Take the decision to instantly incorporate unincorporated states in your empire. Player only, AI will not make this decision.",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

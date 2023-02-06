@@ -1,0 +1,132 @@
+﻿ec_harem = {
+	state_migration_pull_mult = 2.0
+	state_birth_rate_mult = 1.0
+}
+
+ec_super = {
+	country_gold_reserve_limit_mult = 10
+	country_government_wages_mult = -0.3
+	country_military_wages_mult = -0.3
+	country_weekly_innovation_add = 200
+	country_weekly_innovation_max_add = 300
+	country_weekly_innovation_mult = 0.2
+	country_tech_spread_mult = 0.2
+	country_minting_mult = -1
+	country_loan_interest_rate_add = -0.2
+	country_legitimacy_base_add = 120
+	country_infamy_decay_mult = 5.0
+	country_infamy_generation_mult = -0.2
+	country_tension_decay_mult = 0.2
+	country_institution_size_change_speed_mult = 0.6
+	country_trade_route_quantity_mult = 0.5
+	country_max_declared_interests_add = 50
+	country_improve_relations_speed_mult = 8
+	country_damage_relations_speed_mult = 8
+
+	country_bureaucracy_add = 100
+	country_authority_add = 300
+	country_influence_add = 300
+	country_authority_mult = 0.4
+	country_influence_mult = 0.4
+	country_bureaucracy_mult = 1.0
+
+	country_tax_income_add = 9999999
+	country_prestige_mult = 0.2
+	country_law_enactment_time_mult = -0.6
+	country_law_enactment_success_add = 0.7
+
+	country_construction_add = 99
+	country_convoys_capacity_add = 9999
+	country_resource_discovery_chance_mult = 0.5
+	country_resource_depletion_chance_mult = -0.5
+	unit_offense_mult = 1.5
+	unit_defense_mult = 1.5
+	unit_morale_damage_mult = 1.5
+	unit_morale_loss_mult = -1.5
+	unit_recovery_rate_add = 2
+	unit_advancement_speed_mult = 1.5
+
+	interest_group_approval_add = 16
+	interest_group_pop_attraction_mult = 0.2
+
+	state_standard_of_living_add = 2
+	state_turmoil_effects_mult = -10
+	state_mortality_turmoil_mult = 2.1
+	state_minimum_wealth_add = 4
+	state_colony_growth_creation_mult = 3
+	state_colony_growth_speed_mult = 3
+
+	state_tax_capacity_mult = 4.0
+	state_tax_collection_mult = 0.6
+	state_infrastructure_mult = 0.6
+	state_construction_mult = 2.0
+	state_welfare_payments_add = -0.3
+	state_education_access_add = 2.0
+	state_pop_qualifications_mult = 12.2
+	state_assimilation_mult = 2.0
+	state_conversion_mult = 2.0
+	state_working_adult_ratio_add = 0.15
+	state_port_range_add = 5
+}
+
+ec_super_v = {
+	building_group_bg_service_standard_of_living_add = 2
+	building_group_bg_agriculture_standard_of_living_add = 2
+	building_group_bg_plantations_standard_of_living_add = 2
+	building_group_bg_mining_standard_of_living_add = 2
+	building_group_bg_gold_mining_standard_of_living_add = 2
+	building_group_bg_coal_mining_standard_of_living_add = 2
+	building_group_bg_iron_mining_standard_of_living_add = 2
+	building_group_bg_lead_mining_standard_of_living_add = 2
+	building_group_bg_sulfur_mining_standard_of_living_add = 2
+	building_group_bg_rubber_standard_of_living_add = 2
+	building_group_bg_logging_standard_of_living_add = 2
+	building_group_bg_fishing_standard_of_living_add = 2
+	building_group_bg_whaling_standard_of_living_add = 2
+	building_group_bg_oil_extraction_standard_of_living_add = 2
+	building_group_bg_manufacturing_standard_of_living_add = 2
+	building_group_bg_government_standard_of_living_add = 2
+	building_group_bg_infrastructure_standard_of_living_add = 2
+
+	building_group_bg_service_mortality_mult = -0.70
+	building_group_bg_agriculture_mortality_mult = -0.70
+	building_group_bg_ranching_mortality_mult = -0.70
+	building_group_bg_plantations_mortality_mult = -0.70
+	building_group_bg_mining_mortality_mult = -0.70
+	building_group_bg_gold_mining_mortality_mult = -0.70
+	building_group_bg_coal_mining_mortality_mult = -0.70
+	building_group_bg_iron_mining_mortality_mult = -0.70
+	building_group_bg_lead_mining_mortality_mult = -0.70
+	building_group_bg_sulfur_mining_mortality_mult = -0.70
+	building_group_bg_rubber_mortality_mult = -0.70
+	building_group_bg_logging_mortality_mult = -0.70
+	building_group_bg_fishing_mortality_mult = -0.70
+	building_group_bg_whaling_mortality_mult = -0.70
+	building_group_bg_oil_extraction_mortality_mult = -0.70
+	building_group_bg_manufacturing_mortality_mult = -0.70
+	building_group_bg_government_mortality_mult = -0.70
+	building_group_bg_infrastructure_mortality_mult = -0.70
+	building_government_administration_throughput_mult = 1
+
+	building_group_bg_service_tax_mult = 0.3
+	building_group_bg_agriculture_tax_mult = 0.3
+	building_group_bg_mining_tax_mult = 0.3
+	building_group_bg_rubber_tax_mult = 0.3
+	building_group_bg_logging_tax_mult = 0.3
+	building_group_bg_fishing_tax_mult = 0.3
+	building_group_bg_whaling_tax_mult = 0.3
+	building_group_bg_infrastructure_tax_mult = 0.3
+	building_group_bg_government_tax_mult = 0.3
+	building_group_bg_manufacturing_tax_mult = 0.3
+	building_group_bg_oil_extraction_tax_mult = 0.3
+	building_group_bg_sulfur_mining_tax_mult = 0.3
+	building_group_bg_lead_mining_tax_mult = 0.3
+	building_group_bg_iron_mining_tax_mult = 0.3
+	building_group_bg_coal_mining_tax_mult = 0.3
+	building_group_bg_gold_mining_tax_mult = 0.3
+	building_group_bg_plantations_tax_mult = 0.3
+	building_group_bg_ranching_tax_mult = 0.3
+
+	building_throughput_mult = 1.20
+	building_input_mult = -0.9999
+}

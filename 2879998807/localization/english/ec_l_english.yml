@@ -1,0 +1,19 @@
+﻿l_english:
+ ec_super_decision_add:0 "Enable Heavenly Principles"
+ ec_super_decision_add_desc:0 "Enable the Heavenly Principles"
+ ec_super_decision_remove:0 "Disable Heavenly Principles"
+ ec_super_decision_remove_desc:0 "Disable the Heavenly Principles"
+ ec_super:0 "Heavenly Principles"
+
+ ec_super_v_decision_add:0 "Enable Heavenly Constructs"
+ ec_super_v_decision_add_desc:0 "Enable the Heavenly Constructs"
+ ec_super_v_decision_remove:0 "Disable Heavenly Constructs"
+ ec_super_v_decision_remove_desc:0 "Disable the Heavenly Constructs"
+ ec_super_v:0 "Heavenly Constructs"
+ 
+ ec_super_v_decision_add:0 "Enable Heavenly Pops"
+ ec_super_v_decision_add_desc:0 "Enable the Heavenly Pops"
+ ec_super_v_decision_remove:0 "Disable Heavenly Pops"
+ ec_super_v_decision_remove_desc:0 "Disable the Heavenly Pops"
+ ec_super_v:0 "Heavenly Pops"
+

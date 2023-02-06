@@ -1,0 +1,160 @@
+﻿SM_dismantle_subject_industry = {
+	requires_approval = no
+    should_notify_third_parties = no
+	show_effect_in_tooltip = yes
+    possible = {
+        is_at_war = no
+    }
+    potential = {
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			NOT = { 
+				is_country_type = decentralized 
+			}
+            is_direct_subject_of = root
+		}
+	}
+    accept_effect = {
+		scope:target_country = {
+			every_scope_state = {
+				if = {
+					limit = {
+						has_building = building_food_industry
+					}
+					remove_building = building_food_industry
+				}
+
+				if = {
+					limit = {
+						has_building = building_textile_mills
+					}
+					remove_building = building_textile_mills
+				}
+
+				if = {
+					limit = {
+						has_building = building_furniture_manufacturies
+					}
+					remove_building = building_furniture_manufacturies
+				}
+
+				if = {
+					limit = {
+						has_building = building_glassworks
+					}
+					remove_building = building_glassworks
+				}
+
+				if = {
+					limit = {
+						has_building = building_tooling_workshops
+					}
+					remove_building = building_tooling_workshops
+				}
+
+				if = {
+					limit = {
+						has_building = building_paper_mills
+					}
+					remove_building = building_paper_mills
+				}
+
+				if = {
+					limit = {
+						has_building = building_chemical_plants
+					}
+					remove_building = building_chemical_plants
+				}
+
+				if = {
+					limit = {
+						has_building = building_synthetics_plants
+					}
+					remove_building = building_synthetics_plants
+				}
+
+				if = {
+					limit = {
+						has_building = building_steel_mills
+					}
+					remove_building = building_steel_mills
+				}
+
+				if = {
+					limit = {
+						has_building = building_motor_industry
+					}
+					remove_building = building_motor_industry
+				}
+
+				if = {
+					limit = {
+						has_building = building_shipyards
+					}
+					remove_building = building_shipyards
+				}
+
+				if = {
+					limit = {
+						has_building = building_war_machine_industry
+					}
+					remove_building = building_war_machine_industry
+				}
+
+				if = {
+					limit = {
+						has_building = building_electrics_industry
+					}
+					remove_building = building_electrics_industry
+				}
+
+				if = {
+					limit = {
+						has_building = building_arms_industry
+					}
+					remove_building = building_arms_industry
+				}
+
+				if = {
+					limit = {
+						has_building = building_munition_plants
+					}
+					remove_building = building_munition_plants
+				}
+
+				if = {
+					limit = {
+						has_building = building_military_shipyards
+					}
+					remove_building = building_military_shipyards
+				}
+
+				if = {
+					limit = {
+						has_building = building_synthetic_rubber_plants
+					}
+					remove_building = building_synthetic_rubber_plants
+				}
+
+				if = {
+					limit = {
+						has_building = building_synthetic_oil_plants
+					}
+					remove_building = building_synthetic_oil_plants
+				}
+
+				if = {
+					limit = {
+						has_building = building_explosives_industry
+					}
+					remove_building = building_explosives_industry
+				}
+			}
+		}
+    }
+    ai = {
+        will_propose = {
+            always = no
+        }
+    }
+}

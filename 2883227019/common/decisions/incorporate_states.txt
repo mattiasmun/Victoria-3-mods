@@ -1,0 +1,41 @@
+﻿incorporate_states = {
+	
+	is_shown = {
+		any_state = {
+			is_incorporated = no
+			owner = {
+				is_player = yes
+			}
+		}
+	}
+	
+	possible = {
+		any_state = {
+			is_incorporated = no
+			owner = {
+				is_player = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		limit = {
+			any_state = {
+				is_incorporated = no
+				owner = {
+					is_player = yes
+				}
+			}
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = no
+			}
+			set_state_type = incorporated
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}

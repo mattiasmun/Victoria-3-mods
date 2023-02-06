@@ -1,0 +1,369 @@
+#
+#
+#
+
+decree_cg_infrastructure = {
+    texture = "gfx/interface/icons/invention_icons/railways.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_infrastructure_add = 500
+        state_infrastructure_mult = 2.5
+        state_construction_mult = 1.0
+        state_building_port_max_level_add = 15
+        state_port_range_add = 2
+        state_building_construction_sector_max_level_add = 25
+        state_building_barracks_max_level_add = 200
+        state_building_naval_base_max_level_add = 100
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_manufacturing = {
+    texture = "gfx/interface/icons/invention_icons/mechanized_workshops.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        building_group_bg_manufacturing_throughput_mult = 5.0
+        building_group_bg_service_throughput_mult = 5.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_agriculture = {
+    texture = "gfx/interface/icons/invention_icons/mechanized_farming.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        building_group_bg_agriculture_throughput_mult = 5.0
+        building_group_bg_ranching_throughput_mult = 5.0
+        building_group_bg_plantations_throughput_mult = 5.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_natural_resources = {
+    texture = "gfx/interface/icons/invention_icons/prospecting_tech.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        building_group_bg_mining_throughput_mult = 5.0
+        building_group_bg_logging_throughput_mult = 5.0
+        building_group_bg_fishing_throughput_mult = 5.0
+        building_group_bg_whaling_throughput_mult = 5.0
+        building_group_bg_oil_extraction_throughput_mult = 5.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_migration = {
+    texture = "gfx/interface/icons/invention_icons/zeppelins.dds"
+
+    valid = {
+        owner = { is_ai = no }
+        is_isolated_from_market = no
+    }
+
+    modifier = {
+        state_migration_pull_add = 1
+        state_migration_pull_mult = 2.0
+        state_migration_pull_unincorporated_mult = 2.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_living_standard = {
+    texture = "gfx/interface/icons/invention_icons/psychoanalysis.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_standard_of_living_add = 10
+        state_unincorporated_standard_of_living_add = 10
+        state_dependent_wage_mult = 3.0
+        state_minimum_wealth_add = 10
+        state_expected_sol_from_literacy = -5
+        state_poor_expected_sol = -10
+        state_middle_expected_sol = -10
+        state_rich_expected_sol = -10
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_urbanization = {
+    texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_urbanization_mult = 2.0
+        state_infrastructure_from_population_add = 2.0
+        state_infrastructure_from_population_max_add = 500
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_education = {
+    texture = "gfx/interface/icons/invention_icons/academia.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_education_access_add = 2.5
+        state_education_access_wealth_add = 0.2
+        state_pop_qualifications_mult = 2.5
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_nationalism = {
+    texture = "gfx/interface/icons/invention_icons/democracy.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_assimilation_mult = 10.0
+        state_conversion_mult = 10.0
+        state_migration_push_mult = -1.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_bureaucracy = {
+    texture = "gfx/interface/icons/invention_icons/bureaucracy.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_bureaucracy_population_base_cost_factor_mult = -0.25
+        state_tax_waste_add = -0.5
+        state_tax_collection_mult = 0.5
+        state_tax_capacity_add = 300
+        state_tax_capacity_mult = 1.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_colonialism = {
+    texture = "gfx/interface/icons/invention_icons/navigation.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_colony_growth_creation_mult = 5.0
+        state_colony_growth_speed_mult = 5.0
+        state_non_homeland_colony_growth_speed_mult = 5.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_workers = {
+    texture = "gfx/interface/icons/invention_icons/labor_movement.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_working_adult_ratio_add = 0.5
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_birhts = {
+    texture = "gfx/interface/icons/invention_icons/mutual_funds.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_birth_rate_mult = 2.5
+        state_accepted_birth_rate_mult = 2.5
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_conscription = {
+    texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_conscription_rate_add = 2.0
+        state_conscription_rate_mult = 2.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_health = {
+    texture = "gfx/interface/icons/invention_icons/pharmaceuticals.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_mortality_mult = -0.75
+        state_non_homeland_mortality_mult = -1.0
+        state_mortality_turmoil_mult = -0.5
+        state_mortality_wealth_mult = -0.05
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_radicals = {
+    texture = "gfx/interface/icons/invention_icons/international_diplomacy.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+        state_radicals_from_discrimination_mult = -2.0
+        state_radicals_from_sol_change_mult = -2.0
+        state_loyalists_from_sol_change_mult = 2.0
+        state_turmoil_effects_mult = -2.0
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}
+
+decree_cg_state_targeting = {
+    texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+
+    valid = {
+        owner = { is_ai = no }
+    }
+
+    modifier = {
+    }
+
+    cost = 0
+
+    ai_weight = {
+        value = 0
+        multiply = 0
+    }
+}

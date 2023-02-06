@@ -1,0 +1,12 @@
+{
+  "name" : "Notifications not over Outliner",
+  "id" : "2884318353",
+  "version" : "1.0",
+  "supported_game_version" : "1.1.2",
+  "short_description" : "Simple mod that moves the notification area next to the outliner instead of on top.\n\nI've tested this mod with 80% GUI scaling at 1920x1080 resolution. With certain combinations of resolution/UI scale the notifications area overlaps with the lens tool. If that is the case for you try out the compatibility version of this mod: [url=steamcommunity.com/sharedfiles/filedetails/?id=2886957094]Notifications not over Outliner (compatibility version)[/url]\n\nCompatible with [url=steamcommunity.com/sharedfiles/filedetails/?id=2884035975]\"More Spreadsheets\"[/url] (thanks to inch4tk for the help). Load this mod after \"More Spreadsheets\".\n\nCompatible with [url=steamcommunity.com/sharedfiles/filedetails/?id=2883625242]\"Notifications Filter\"[/url].",
+  "tags" : ["Utilities","Graphics"],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

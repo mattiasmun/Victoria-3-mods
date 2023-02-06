@@ -1,0 +1,5 @@
+﻿modifier_reduced_pop = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_mortality_mult = 10
+	state_tobedeleted_standard_of_living_add = -20
+}

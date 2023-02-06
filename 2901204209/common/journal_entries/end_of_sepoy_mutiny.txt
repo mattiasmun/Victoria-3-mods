@@ -1,0 +1,23 @@
+﻿je_sepoy_mutiny = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	complete = {
+		trigger_if = {
+			limit = { exists = c:MUG }
+			c:MUG = { is_country_alive = no }
+		}
+		highest_secession_progress < 0.3
+		has_any_secessionists_broken_out = no
+		is_at_war = no
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = company_crushed_mutiny
+			months = normal_modifier_time
+		}
+	}
+
+	weight = 100
+	should_be_pinned_by_default = yes
+}

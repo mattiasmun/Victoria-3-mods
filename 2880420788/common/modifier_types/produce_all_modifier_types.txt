@@ -1,0 +1,14 @@
+﻿building_output_services_add = {
+	good = yes
+	percent = no
+}
+
+building_input_services_add = {
+	good = no
+	percent = no
+}
+
+building_output_shares_add = {
+	good = yes
+	percent = no
+}

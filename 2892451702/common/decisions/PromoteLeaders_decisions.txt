@@ -1,0 +1,16 @@
+﻿pl_promote_leaders_player = {
+	is_shown = {
+		is_player = yes
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = PromoteLeaders_Events.1
+			popup = yes
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}

@@ -1,0 +1,59 @@
+[b]Auto Convert PM : After Annex And Conquest[/b]
+I combine the two mod : [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2892482848]Production Method Auto Conversion[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2881417371]merge subject[/url] !
+
+Thanks to the origin makers!
+
+[h1]Origin Mod[/h1]
+[b]Production Method Auto Conversion[/b]
+[olist]
+	[*]Automatically convert production methods of the buildings that you just conquered.
+	[*]Just convert PM that is used [b]majorly[/b] in your country (over 90%).
+	[*]The auto conversion only happens to the newly acquired states right after conquering.
+[/olist]
+
+[b]merge subject[/b]
+Allow you to annex your subject through a diplomatic actions.
+
+
+[h1]My Work[/h1]
+[olist]
+	[*]List a excel for the production methods, for future development (Such as mod buildings).
+	[*]The auto conversion can happens to the country you just annexed.
+	[*]And now annex your subject should pay some [b]infamy[/b] and need some condition:
+		base               -50
+		has truce          -50
+		friendly relations  50
+		use obligation      50
+		So if have truce, you need both friendly relations (80) and use obligation; if not, then one of it.
+	[*]To allow you to get obligation even if you have vassalled them, I have to change the bankroll action.
+
+	[b]New update[/b]:
+	[*]Allow ai to annex their subject of three types : dominion, puppet and vassal (so protectorate and tributary is not allowed for ai). However, GBR, SPA, NET are exception, for balance.
+	[*][b]German_Unification event is also taken into consideration[/b].
+
+	[b]New update 2[/b]:
+	[*]The protection for GBR, SPA, NET's subject now apply to the particular countries, so they can also annex the subject they get in later game.
+	[*]Increase the ai weight for BIC in [b]Doctrine_Of_Lapse_Decision[/b], and reduce the infamy for ai by half. And to avoid the subject of BIC to become GBR's direct subject, decrease the ai weight for british_raj_decision to 0.
+	[*]AI will more willing to bankroll their subject in order to annex them.
+	[*][strike]The subsidy set can also auto convert[/strike] (Now there is a bug). But it seem to be no key word for auto_expand so I can do nothing.
+
+	[b]New update 3[/b]:
+	[*]Xizang now owe a favor to GreatQing at game start.
+	[*]I finally find that the reason of the early found of british raj, is sepoy mutiny event. So I remove the change in GER's decision, but edit the sepoy mutiny journal entries.
+
+	[b]New update 4[/b]:
+	[*]I make a decision that allow you to auto subsidy [b]all[/b] the buildings on where you get further.
+	[*]Now AI will always agree to annex when your infamy is above 900 :)
+[/olist]
+
+
+[h1]Work from other developer[/h1]
+[olist]
+	[*]Support back down.
+	[*]Support peace agreement signed.
+	[*]Fix the failure issue if you have more than one major enemy in one war.
+[/olist]
+Thanks Greysuki!
+
+And I find that I can't chance the value of use_obligation_chance and owe_obligation_chance no matter where I place them.
+I have report it to the [url=https://forum.paradoxplaza.com/forum/threads/victoria-iii-use_obligation_chance-i-cant-chance-its-value.1561908/]paradox forum bug-reports[/url].

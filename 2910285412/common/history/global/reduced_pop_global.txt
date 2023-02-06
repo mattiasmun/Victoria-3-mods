@@ -1,0 +1,321 @@
+﻿# This is executed last among all history
+GLOBAL = {
+
+	random_state = {
+		limit = {
+			owner = c:HMB
+		}
+		save_scope_as = scope_deleted_state
+	}
+	every_country = {
+		every_scope_pop = {
+			change_pop_culture = { target = cu:tobedeleted value = 0.8 }
+		}
+		every_scope_pop ={
+			limit = {
+				culture = cu:tobedeleted
+			}
+			move_pop = scope:scope_deleted_state
+		}
+		every_scope_state = {
+			if = {
+				limit = { has_building = building_construction_sector }
+				remove_building = building_construction_sector
+                create_building = { 
+                    building = building_construction_sector
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_government_administration }
+				remove_building = building_government_administration
+                create_building = { 
+                    building = building_government_administration
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_university }
+				remove_building = building_university
+                create_building = { 
+                    building = building_university
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_port }
+				remove_building = building_port
+                create_building = { 
+                    building = building_port
+                    level = 1
+                }
+			} 
+			if = {
+				limit = { has_building = building_food_industry }
+				remove_building = building_food_industry
+                create_building = { 
+                    building = building_food_industry
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_textile_mills }
+				remove_building = building_textile_mills
+                create_building = { 
+                    building = building_textile_mills
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_furniture_manufacturies }
+				remove_building = building_furniture_manufacturies
+                create_building = { 
+                    building = building_furniture_manufacturies
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_glassworks }
+				remove_building = building_glassworks
+                create_building = { 
+                    building = building_glassworks
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_tooling_workshops }
+				remove_building = building_tooling_workshops
+                create_building = { 
+                    building = building_tooling_workshops
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_paper_mills }
+				remove_building = building_paper_mills
+                create_building = { 
+                    building = building_paper_mills
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_shipyards }
+				remove_building = building_shipyards
+                create_building = { 
+                    building = building_shipyards
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_arms_industry }
+				remove_building = building_arms_industry
+                create_building = { 
+                    building = building_arms_industry
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_wheat_farm }
+				remove_building = building_wheat_farm
+                create_building = { 
+                    building = building_wheat_farm
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_rice_farm }
+				remove_building = building_rice_farm
+                create_building = { 
+                    building = building_rice_farm
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_livestock_ranch }
+				remove_building = building_livestock_ranch
+                create_building = { 
+                    building = building_livestock_ranch
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_coal_mine }
+				remove_building = building_coal_mine
+                create_building = { 
+                    building = building_coal_mine
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_iron_mine }
+				remove_building = building_iron_mine
+                create_building = { 
+                    building = building_iron_mine
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_lead_mine }
+				remove_building = building_lead_mine
+                create_building = { 
+                    building = building_lead_mine
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_sulfur_mine }
+				remove_building = building_sulfur_mine
+                create_building = { 
+                    building = building_sulfur_mine
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_logging_camp }
+				remove_building = building_logging_camp
+                create_building = { 
+                    building = building_logging_camp
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_fishing_wharf }
+				remove_building = building_fishing_wharf
+                create_building = { 
+                    building = building_fishing_wharf
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_motor_industry }
+				remove_building = building_motor_industry
+                create_building = { 
+                    building = building_motor_industry
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_railway }
+				remove_building = building_railway
+                create_building = { 
+                    building = building_railway
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_steel_mills }
+				remove_building = building_steel_mills
+                create_building = { 
+                    building = building_steel_mills
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_barracks }
+				remove_building = building_barracks
+                create_building = { 
+                    building = building_barracks
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_naval_base }
+				remove_building = building_naval_base
+                create_building = { 
+                    building = building_naval_base
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_coffee_plantation }
+				remove_building = building_coffee_plantation
+                create_building = { 
+                    building = building_coffee_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_cotton_plantation }
+				remove_building = building_cotton_plantation
+                create_building = { 
+                    building = building_cotton_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_dye_plantation }
+				remove_building = building_dye_plantation
+                create_building = { 
+                    building = building_dye_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_tea_plantation }
+				remove_building = building_tea_plantation
+                create_building = { 
+                    building = building_tea_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_tobacco_plantation }
+				remove_building = building_tobacco_plantation
+                create_building = { 
+                    building = building_tobacco_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_sugar_plantation }
+				remove_building = building_sugar_plantation
+                create_building = { 
+                    building = building_sugar_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_banana_plantation }
+				remove_building = building_banana_plantation
+                create_building = { 
+                    building = building_banana_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_silk_plantation }
+				remove_building = building_silk_plantation
+                create_building = { 
+                    building = building_silk_plantation
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_maize_farm }
+				remove_building = building_maize_farm
+                create_building = { 
+                    building = building_maize_farm
+                    level = 1
+                }
+			}
+			if = {
+				limit = { has_building = building_rye_farm }
+				remove_building = building_rye_farm
+                create_building = { 
+                    building = building_rye_farm
+                    level = 1
+                }
+			}
+		}
+	}
+	random_state = {
+		limit = {
+			owner = c:HMB
+		}
+		add_modifier = {
+			name = modifier_reduced_pop
+			months = 120
+		}
+	}	
+	
+}

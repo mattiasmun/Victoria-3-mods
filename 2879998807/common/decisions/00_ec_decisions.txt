@@ -1,0 +1,95 @@
+ec_super_decision_add = {
+	is_shown = {
+		is_ai = no
+        NOT = {                    
+            has_modifier = ec_super
+        }
+	}
+	
+	when_taken = {
+        add_modifier = ec_super    
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}
+
+ec_super_decision_remove = {
+	is_shown = {
+		is_ai = no
+        has_modifier = ec_super
+	}
+	
+	when_taken = {        	
+        remove_modifier = ec_super      
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}
+
+ec_super_v_decision_add = {
+	is_shown = {
+		is_ai = no
+        NOT = {                    
+            has_modifier = ec_super_v 
+        }
+	}
+	
+	when_taken = {
+        add_modifier = ec_super_v 
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}
+
+ec_super_v_decision_remove = {
+	is_shown = {
+		is_ai = no
+        has_modifier = ec_super_v 
+	}
+	
+	when_taken = {        	
+        remove_modifier = ec_super_v 
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}
+
+ec_harem_decision_add = {
+	is_shown = {
+		is_ai = no
+        NOT = {                    
+            has_modifier = ec_harem 
+        }
+	}
+	
+	when_taken = {
+        add_modifier = ec_harem 
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}
+
+ec_harem_decision_remove = {
+	is_shown = {
+		is_ai = no
+        has_modifier = ec_harem 
+	}
+	
+	when_taken = {        	
+        remove_modifier = ec_harem 
+	}
+
+	ai_chance = {
+		base = -100
+	}
+}

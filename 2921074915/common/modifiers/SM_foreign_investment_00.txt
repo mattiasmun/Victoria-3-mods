@@ -1,0 +1,35 @@
+﻿SM_foreign_investment_provider_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_construction_add = -5
+}
+
+SM_foreign_investment_provider_medium = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_construction_add = -20
+}
+
+SM_foreign_investment_provider_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_construction_add = -100
+}
+
+SM_foreign_investment_receiver_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_construction_add = 5
+}
+
+SM_foreign_investment_receiver_medium = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_construction_add = 20
+}
+
+SM_foreign_investment_receiver_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_construction_add = 100
+	
+}
+
+SM_block_industrial_expansion = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_group_bg_manufacturing_throughput_mult = -0.9
+}

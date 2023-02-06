@@ -1,0 +1,260 @@
+merge_subject = {
+    requires_approval = yes
+	can_use_obligations = yes
+	show_effect_in_tooltip = yes
+
+	potential = {
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			is_direct_subject_of = root
+		}
+		OR = {
+			scope:target_country = {
+				OR = {
+					has_diplomatic_pact = { who = root type = dominion }
+					has_diplomatic_pact = { who = root type = puppet }
+					has_diplomatic_pact = { who = root type = vassal }
+				}
+			}
+			AND = {
+				is_player = yes
+				scope:target_country = {
+					has_diplomatic_pact = { who = root type = protectorate }
+				}
+			}
+			AND = {
+				is_player = yes
+				scope:target_country = {
+					has_diplomatic_pact = { who = root type = tributary }
+				}
+			}
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		scope:target_country = { is_at_war = no }
+		has_diplomatic_relevance = scope:target_country
+		is_revolutionary = no
+		scope:target_country = {
+			is_revolutionary = no
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
+			OR = {	
+				AND = {
+					market = { has_port = yes }
+					scope:target_country.market = { has_port = yes }
+				}
+				scope:actor.market = {
+					any_scope_country = {
+						is_adjacent = root
+					}
+				}
+			}
+		}		
+	}
+
+	accept_effect = {
+		if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						has_diplomatic_pact = { who = root type = protectorate }
+						has_diplomatic_pact = { who = root type = tributary }
+					}
+				}
+			}
+			create_incident = {
+				country = scope:target_country
+				value = 10
+			}
+		}
+		if = {
+			limit = {
+				scope:target_country = {
+					OR = {
+						has_diplomatic_pact = { who = root type = dominion }
+						has_diplomatic_pact = { who = root type = puppet }
+						has_diplomatic_pact = { who = root type = vassal }
+					}
+				}
+			}
+			create_incident = {
+				country = scope:target_country
+				value = 5
+			}
+		}
+		hidden_effect = {
+			trigger_event = { id = pm_convert_event.1 }
+		}
+		annex = scope:target_country
+		hidden_effect = {
+			trigger_event = { id = pm_convert_event.2 }
+		}
+	}
+	
+	ai = {
+        will_propose = {
+			value = 10
+
+			if = {
+				limit = {
+					OR = {
+						scope:target_country = c:QUE			#Canada
+						scope:target_country = c:HBC
+						scope:target_country = c:ONT
+						scope:target_country = c:NBS
+						scope:target_country = c:NVS
+						scope:target_country = c:ORG
+						scope:target_country = c:CAN
+
+						scope:target_country = c:NSW			#Australia and New Zealand
+						scope:target_country = c:WAS
+						scope:target_country = c:SAS
+						scope:target_country = c:UNT
+						scope:target_country = c:TAS
+						scope:target_country = c:AST
+
+						scope:target_country = c:BIC			#East India Company
+						scope:target_country = c:SAF			#South Africa
+
+						scope:target_country = c:DEI			#Dutch East Indies
+						scope:target_country = c:PHI			#Spanish Philippines
+						scope:target_country = c:CUB			#Cuba
+					}
+				}
+				add = {
+					value = -100
+				}	
+			}
+
+        }
+
+		accept_score = {
+			value = 0
+	
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
+				value = -50
+			}	
+	
+			if = {
+				limit = { has_truce_with = scope:actor }
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_TRUCE"
+					value = -50
+				}	
+			}
+
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_RELATIONS"	
+				if = {
+					limit = {
+						"relations(scope:actor)" < relations_threshold:cordial
+					}
+					value = 0
+				}					
+				if = {
+					limit = {
+						"relations(scope:actor)" >= relations_threshold:cordial
+						"relations(scope:actor)" < relations_threshold:amicable
+					}
+					value = 0
+				}					
+				if = {
+					limit = {
+						"relations(scope:actor)" >= relations_threshold:amicable
+						"relations(scope:actor)" < relations_threshold:friendly
+					}
+					value = 0
+				}	
+				if = {
+					limit = {
+						"relations(scope:actor)" >= relations_threshold:friendly
+					}
+					value = 50
+				}				
+			}
+			add = {
+				desc = "DIPLOMATIC_ACCEPTANCE_INFAMY"
+				if = {
+					limit = {
+						"scope:actor.infamy" >= 900
+					}
+					value = 1000
+				}					
+			}
+			if = {
+				limit = {
+					AND = {
+						scope:actor = c:GBR
+						scope:actor = {
+							is_player = no
+						}
+						OR = {
+							THIS = c:QUE			#Canada
+							THIS = c:HBC
+							THIS = c:ONT
+							THIS = c:NBS
+							THIS = c:NVS
+							THIS = c:ORG
+							THIS = c:CAN
+
+							THIS = c:NSW			#Australia and New Zealand
+							THIS = c:WAS
+							THIS = c:SAS
+							THIS = c:UNT
+							THIS = c:TAS
+							THIS = c:AST
+
+							THIS = c:BIC			#East India Company
+							THIS = c:SAF			#South Africa
+						}
+					}
+				}
+				add = {
+					value = -1000
+				}	
+			}
+			if = {
+				limit = {
+					AND = {
+						scope:actor = c:NET
+						scope:actor = {
+							is_player = no
+						}
+						THIS = c:DEI			#Dutch East Indies
+					}
+				}
+				add = {
+					value = -1000
+				}	
+			}
+			if = {
+				limit = {
+					AND = {
+						scope:actor = c:SPA
+						scope:actor = {
+							is_player = no
+						}
+						OR = {
+							THIS = c:PHI			#Spanish Philippines
+							THIS = c:CUB			#Cuba
+						}
+					}
+				}
+				add = {
+					value = -1000
+				}	
+			}
+		}
+		use_obligation_chance = {
+			value = 50
+		}
+		owe_obligation_chance = {
+			value = -30
+		}		
+	}
+}
