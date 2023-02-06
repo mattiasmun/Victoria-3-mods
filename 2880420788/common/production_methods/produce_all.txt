@@ -23,6 +23,20 @@
 			building_soldiers_shares_add = 850
 		}
 	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 5100
+			country_convoys_capacity_add = 10200
+			country_minting_add = 38250
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 510
+			state_pop_qualifications_mult = 2
+			state_tax_capacity_add = 1020
+		}
+	}
 }
 
 pm_building_all_basic = {
@@ -68,6 +82,20 @@ pm_building_all_basic = {
 			building_officers_shares_add = 850
 			building_peasants_shares_add = 850
 			building_soldiers_shares_add = 850
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = 5100
+			country_convoys_capacity_add = 10200
+			country_minting_add = 38250
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_infrastructure_add = 510
+			state_pop_qualifications_mult = 2
+			state_tax_capacity_add = 1020
 		}
 	}
 }
@@ -204,6 +232,7 @@ pm_building_all_advanced = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5100
 			country_convoys_capacity_add = 10200
+			country_minting_add = 38250
 		}
 	}
 	state_modifiers = {
