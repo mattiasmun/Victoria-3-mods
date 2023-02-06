@@ -76,7 +76,6 @@ pm_building_all_basic = {
 pm_building_all_advanced = {
 	texture = "gfx/interface/icons/production_method_icons/production_2.dds"
 
-
 	building_modifiers = {
 		level_scaled = {
 			building_employment_academics_add = 17000
