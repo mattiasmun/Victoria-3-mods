@@ -1,6 +1,28 @@
 ﻿pm_building_all_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/constructor.dds"
 	ai_weight = 0
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_academics_add = 17000
+			building_employment_aristocrats_add = 17000
+			building_employment_capitalists_add = 17000
+			building_employment_officers_add = 17000
+			building_employment_peasants_add = 17000
+			building_employment_soldiers_add = 17000
+		}
+		workforce_scaled = {
+			building_output_gold_add = 102000
+		}
+		unscaled = {
+			building_academics_shares_add = 850
+			building_aristocrats_shares_add = 850
+			building_capitalists_shares_add = 850
+			building_officers_shares_add = 850
+			building_peasants_shares_add = 850
+			building_soldiers_shares_add = 850
+		}
+	}
 }
 
 
@@ -20,23 +42,25 @@ pm_building_all_basic = {
 		workforce_scaled = {
 			building_output_groceries_add = 17528
 
-			building_output_furniture_add = 10000
+			building_output_furniture_add = 10200
 
-			building_output_fabric_add = 10000
+			building_output_fabric_add = 10200
 
-			building_output_tools_add = 10000
+			building_output_gold_add = 1020
 
-			building_output_paper_add = 10000
+			building_output_tools_add = 10200
 
-			building_output_wood_add = 10000
+			building_output_paper_add = 10200
 
-			building_output_coal_add = 10000
+			building_output_wood_add = 10200
 
-			building_output_iron_add = 10000
+			building_output_coal_add = 10200
 
-			building_output_lead_add = 10000
+			building_output_iron_add = 10200
 
-			building_output_sulfur_add = 10000
+			building_output_lead_add = 10200
+
+			building_output_sulfur_add = 10200
 		}
 		unscaled = {
 			building_academics_shares_add = 850
@@ -55,24 +79,29 @@ pm_building_all_advanced = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_aristocrats_add = 100000
+			building_employment_academics_add = 17000
+			building_employment_aristocrats_add = 17000
+			building_employment_capitalists_add = 17000
+			building_employment_officers_add = 17000
+			building_employment_peasants_add = 17000
+			building_employment_soldiers_add = 17000
 		}
 		workforce_scaled = {
 			building_output_services_add = 105028
 
 			building_output_fine_art_add = 37191
 
-			building_output_furniture_add = 10000
+			building_output_furniture_add = 10200
 
-			building_output_clothes_add = 10000
+			building_output_clothes_add = 10200
 
-			building_output_tools_add = 10000
+			building_output_tools_add = 10200
 
-			building_output_glass_add = 10000
+			building_output_glass_add = 10200
 
-			building_output_steel_add = 10000
+			building_output_steel_add = 10200
 
-			building_output_liquor_add = 10000
+			building_output_liquor_add = 10200
 
 			building_output_groceries_add = 17528
 
@@ -82,37 +111,37 @@ pm_building_all_advanced = {
 
 			building_output_porcelain_add = 28788
 
-			building_output_fertilizer_add = 10000
+			building_output_fertilizer_add = 10200
 
-			building_output_explosives_add = 10000
+			building_output_explosives_add = 10200
 
-			building_output_ammunition_add = 10000
+			building_output_ammunition_add = 10200
 
-			building_output_artillery_add = 10000
+			building_output_artillery_add = 10200
 
-			building_output_engines_add = 10000
+			building_output_engines_add = 10200
 
-			building_output_clippers_add = 10000
+			building_output_clippers_add = 10200
 
-			building_output_steamers_add = 10000
+			building_output_steamers_add = 10200
 
-			building_output_manowars_add = 10000
+			building_output_manowars_add = 10200
 
-			building_output_ironclads_add = 10000
+			building_output_ironclads_add = 10200
 
 			building_output_automobiles_add = 14085
 
-			building_output_aeroplanes_add = 10000
+			building_output_aeroplanes_add = 10200
 
-			building_output_tanks_add = 10000
+			building_output_tanks_add = 10200
 
 			building_output_radios_add = 27824
 
 			building_output_telephones_add = 24243
 
-			building_output_grain_add = 10000
+			building_output_grain_add = 10200
 
-			building_output_fish_add = 10000
+			building_output_fish_add = 10200
 
 			building_output_meat_add = 16082
 
@@ -120,52 +149,57 @@ pm_building_all_advanced = {
 
 			building_output_wine_add = 10744
 
-			building_output_fabric_add = 10000
+			building_output_fabric_add = 10200
 
-			building_output_wood_add = 10000
+			building_output_wood_add = 10200
 
 			building_output_sugar_add = 11881
 
-			building_output_coal_add = 10000
+			building_output_coal_add = 10200
 
-			building_output_iron_add = 10000
+			building_output_iron_add = 10200
 
-			building_output_lead_add = 10000
+			building_output_lead_add = 10200
 
-			building_output_oil_add = 10000
+			building_output_oil_add = 10200
 
-			building_output_gold_add = 1000
+			building_output_gold_add = 1020
 
-			building_output_sulfur_add = 10000
+			building_output_sulfur_add = 10200
 
-			building_output_hardwood_add = 10000
+			building_output_hardwood_add = 10200
 
-			building_output_rubber_add = 10000
+			building_output_rubber_add = 10200
 
 			building_output_coffee_add = 12500
 
-			building_output_dye_add = 10000
+			building_output_dye_add = 10200
 
-			building_output_opium_add = 10000
+			building_output_opium_add = 10200
 
 			building_output_tea_add = 15462
 
-			building_output_silk_add = 10000
+			building_output_silk_add = 10200
 
-			building_output_tobacco_add = 10000
+			building_output_tobacco_add = 10200
 
-			building_output_small_arms_add = 10000
+			building_output_small_arms_add = 10200
 
-			building_output_paper_add = 10000
+			building_output_paper_add = 10200
 
-			building_output_literature_add = 10000
+			building_output_literature_add = 10200
 
-			building_output_electricity_add = 10000
+			building_output_electricity_add = 10200
 
 			building_output_transportation_add = 15910
 		}
 		unscaled = {
-			building_aristocrats_shares_add = 5000
+			building_academics_shares_add = 850
+			building_aristocrats_shares_add = 850
+			building_capitalists_shares_add = 850
+			building_officers_shares_add = 850
+			building_peasants_shares_add = 850
+			building_soldiers_shares_add = 850
 		}
 	}
 }
