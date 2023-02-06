@@ -25,7 +25,6 @@
 	}
 }
 
-
 pm_building_all_basic = {
 	texture = "gfx/interface/icons/production_method_icons/production.dds"
 	ai_weight = 0
@@ -40,27 +39,27 @@ pm_building_all_basic = {
 			building_employment_soldiers_add = 17000
 		}
 		workforce_scaled = {
+			building_output_gold_add = 91067
+
 			building_output_groceries_add = 17528
 
-			building_output_furniture_add = 10200
+			building_output_coal_add = 10200
 
 			building_output_fabric_add = 10200
 
-			building_output_gold_add = 1020
-
-			building_output_tools_add = 10200
-
-			building_output_paper_add = 10200
-
-			building_output_wood_add = 10200
-
-			building_output_coal_add = 10200
+			building_output_furniture_add = 10200
 
 			building_output_iron_add = 10200
 
 			building_output_lead_add = 10200
 
+			building_output_paper_add = 10200
+
 			building_output_sulfur_add = 10200
+
+			building_output_tools_add = 10200
+
+			building_output_wood_add = 10200
 		}
 		unscaled = {
 			building_academics_shares_add = 850
