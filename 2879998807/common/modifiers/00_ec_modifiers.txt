@@ -4,7 +4,7 @@
 }
 
 ec_super = {
-	country_gold_reserve_limit_mult = 2
+	country_gold_reserve_limit_mult = -0.9
 	country_government_wages_mult = -0.1
 	country_military_wages_mult = -0.1
 	country_weekly_innovation_add = 200
