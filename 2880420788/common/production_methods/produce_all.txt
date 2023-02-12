@@ -4,12 +4,12 @@
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 17000
-			building_employment_aristocrats_add = 17000
-			building_employment_capitalists_add = 17000
-			building_employment_officers_add = 17000
-			building_employment_peasants_add = 17000
-			building_employment_soldiers_add = 17000
+			building_employment_academics_add = 16667
+			building_employment_aristocrats_add = 8333
+			building_employment_capitalists_add = 8333
+			building_employment_officers_add = 16667
+			building_employment_peasants_add = 25000
+			building_employment_soldiers_add = 25000
 		}
 		workforce_scaled = {
 			building_output_gold_add = 102000
@@ -47,12 +47,12 @@ pm_building_all_basic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 17000
-			building_employment_aristocrats_add = 17000
-			building_employment_capitalists_add = 17000
-			building_employment_officers_add = 17000
-			building_employment_peasants_add = 17000
-			building_employment_soldiers_add = 17000
+			building_employment_academics_add = 16667
+			building_employment_aristocrats_add = 8333
+			building_employment_capitalists_add = 8333
+			building_employment_officers_add = 16667
+			building_employment_peasants_add = 25000
+			building_employment_soldiers_add = 25000
 		}
 		workforce_scaled = {
 			building_output_gold_add = 91067
@@ -109,12 +109,12 @@ pm_building_all_advanced = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 17000
-			building_employment_aristocrats_add = 17000
-			building_employment_capitalists_add = 17000
-			building_employment_officers_add = 17000
-			building_employment_peasants_add = 17000
-			building_employment_soldiers_add = 17000
+			building_employment_academics_add = 16667
+			building_employment_aristocrats_add = 8333
+			building_employment_capitalists_add = 8333
+			building_employment_officers_add = 16667
+			building_employment_peasants_add = 25000
+			building_employment_soldiers_add = 25000
 		}
 		workforce_scaled = {
 			building_output_gold_add = 1020
@@ -230,7 +230,7 @@ pm_building_all_advanced = {
 			building_officers_shares_add = 850
 			building_peasants_shares_add = 850
 			building_soldiers_shares_add = 850
-		}	
+		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
