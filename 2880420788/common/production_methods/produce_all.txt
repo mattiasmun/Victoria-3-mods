@@ -15,12 +15,12 @@
 			building_output_gold_add = 102000
 		}
 		unscaled = {
-			building_academics_shares_add = 470
-			building_aristocrats_shares_add = 67
-			building_capitalists_shares_add = 178
-			building_officers_shares_add = 314
-			building_peasants_shares_add = 829
-			building_soldiers_shares_add = 642
+			building_academics_shares_add = 1174
+			building_aristocrats_shares_add = 169
+			building_capitalists_shares_add = 445
+			building_officers_shares_add = 785
+			building_peasants_shares_add = 2072
+			building_soldiers_shares_add = 1605
 		}
 	}
 	country_modifiers = {
@@ -78,12 +78,12 @@ pm_building_all_basic = {
 			building_output_wood_add = 10200
 		}
 		unscaled = {
-			building_academics_shares_add = 470
-			building_aristocrats_shares_add = 67
-			building_capitalists_shares_add = 178
-			building_officers_shares_add = 314
-			building_peasants_shares_add = 829
-			building_soldiers_shares_add = 642
+			building_academics_shares_add = 1174
+			building_aristocrats_shares_add = 169
+			building_capitalists_shares_add = 445
+			building_officers_shares_add = 785
+			building_peasants_shares_add = 2072
+			building_soldiers_shares_add = 1605
 		}
 	}
 	country_modifiers = {
@@ -224,12 +224,12 @@ pm_building_all_advanced = {
 			building_output_wood_add = 10200
 		}
 		unscaled = {
-			building_academics_shares_add = 470
-			building_aristocrats_shares_add = 67
-			building_capitalists_shares_add = 178
-			building_officers_shares_add = 314
-			building_peasants_shares_add = 829
-			building_soldiers_shares_add = 642
+			building_academics_shares_add = 1174
+			building_aristocrats_shares_add = 169
+			building_capitalists_shares_add = 445
+			building_officers_shares_add = 785
+			building_peasants_shares_add = 2072
+			building_soldiers_shares_add = 1605
 		}
 	}
 	country_modifiers = {
