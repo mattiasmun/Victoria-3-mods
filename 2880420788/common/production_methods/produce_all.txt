@@ -4,31 +4,31 @@
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 16667
-			building_employment_aristocrats_add = 8333
-			building_employment_capitalists_add = 8333
-			building_employment_officers_add = 16667
-			building_employment_peasants_add = 25000
-			building_employment_soldiers_add = 25000
+			building_employment_academics_add = 18791
+			building_employment_aristocrats_add = 2698
+			building_employment_capitalists_add = 7120
+			building_employment_officers_add = 12561
+			building_employment_peasants_add = 33149
+			building_employment_soldiers_add = 25681
 		}
 		workforce_scaled = {
 			building_output_gold_add = 102000
 		}
 		unscaled = {
-			building_academics_shares_add = 850
-			building_aristocrats_shares_add = 850
-			building_capitalists_shares_add = 850
-			building_officers_shares_add = 850
-			building_peasants_shares_add = 850
-			building_soldiers_shares_add = 850
+			building_academics_shares_add = 470
+			building_aristocrats_shares_add = 67
+			building_capitalists_shares_add = 178
+			building_officers_shares_add = 314
+			building_peasants_shares_add = 829
+			building_soldiers_shares_add = 642
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 40
+			country_construction_add = 50
 			country_convoys_capacity_add = 2000
-			country_minting_add = 20000
+			country_minting_add = 10000
 			country_weekly_innovation_add = 20
 		}
 	}
@@ -47,12 +47,12 @@ pm_building_all_basic = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 16667
-			building_employment_aristocrats_add = 8333
-			building_employment_capitalists_add = 8333
-			building_employment_officers_add = 16667
-			building_employment_peasants_add = 25000
-			building_employment_soldiers_add = 25000
+			building_employment_academics_add = 18791
+			building_employment_aristocrats_add = 2698
+			building_employment_capitalists_add = 7120
+			building_employment_officers_add = 12561
+			building_employment_peasants_add = 33149
+			building_employment_soldiers_add = 25681
 		}
 		workforce_scaled = {
 			building_output_gold_add = 91067
@@ -78,20 +78,20 @@ pm_building_all_basic = {
 			building_output_wood_add = 10200
 		}
 		unscaled = {
-			building_academics_shares_add = 850
-			building_aristocrats_shares_add = 850
-			building_capitalists_shares_add = 850
-			building_officers_shares_add = 850
-			building_peasants_shares_add = 850
-			building_soldiers_shares_add = 850
+			building_academics_shares_add = 470
+			building_aristocrats_shares_add = 67
+			building_capitalists_shares_add = 178
+			building_officers_shares_add = 314
+			building_peasants_shares_add = 829
+			building_soldiers_shares_add = 642
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 40
+			country_construction_add = 50
 			country_convoys_capacity_add = 2000
-			country_minting_add = 20000
+			country_minting_add = 10000
 			country_weekly_innovation_add = 20
 		}
 	}
@@ -109,12 +109,12 @@ pm_building_all_advanced = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_academics_add = 16667
-			building_employment_aristocrats_add = 8333
-			building_employment_capitalists_add = 8333
-			building_employment_officers_add = 16667
-			building_employment_peasants_add = 25000
-			building_employment_soldiers_add = 25000
+			building_employment_academics_add = 18791
+			building_employment_aristocrats_add = 2698
+			building_employment_capitalists_add = 7120
+			building_employment_officers_add = 12561
+			building_employment_peasants_add = 33149
+			building_employment_soldiers_add = 25681
 		}
 		workforce_scaled = {
 			building_output_gold_add = 1020
@@ -224,20 +224,20 @@ pm_building_all_advanced = {
 			building_output_wood_add = 10200
 		}
 		unscaled = {
-			building_academics_shares_add = 850
-			building_aristocrats_shares_add = 850
-			building_capitalists_shares_add = 850
-			building_officers_shares_add = 850
-			building_peasants_shares_add = 850
-			building_soldiers_shares_add = 850
+			building_academics_shares_add = 470
+			building_aristocrats_shares_add = 67
+			building_capitalists_shares_add = 178
+			building_officers_shares_add = 314
+			building_peasants_shares_add = 829
+			building_soldiers_shares_add = 642
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 40
+			country_construction_add = 50
 			country_convoys_capacity_add = 2000
-			country_minting_add = 20000
+			country_minting_add = 10000
 			country_weekly_innovation_add = 20
 		}
 	}
