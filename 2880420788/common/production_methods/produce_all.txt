@@ -8,7 +8,7 @@
 			building_employment_aristocrats_add = 629
 			building_employment_capitalists_add = 1258
 			building_employment_officers_add = 2516
-			building_employment_peasants_add = 80503
+			building_employment_clerks_add = 80503
 			building_employment_soldiers_add = 10063
 		}
 		workforce_scaled = {
@@ -19,7 +19,7 @@
 			building_aristocrats_shares_add = 39
 			building_capitalists_shares_add = 79
 			building_officers_shares_add = 157
-			building_peasants_shares_add = 5032
+			building_clerks_shares_add = 5032
 			building_soldiers_shares_add = 629
 		}
 	}
@@ -51,7 +51,7 @@ pm_building_all_basic = {
 			building_employment_aristocrats_add = 629
 			building_employment_capitalists_add = 1258
 			building_employment_officers_add = 2516
-			building_employment_peasants_add = 80503
+			building_employment_clerks_add = 80503
 			building_employment_soldiers_add = 10063
 		}
 		workforce_scaled = {
@@ -82,7 +82,7 @@ pm_building_all_basic = {
 			building_aristocrats_shares_add = 39
 			building_capitalists_shares_add = 79
 			building_officers_shares_add = 157
-			building_peasants_shares_add = 5032
+			building_clerks_shares_add = 5032
 			building_soldiers_shares_add = 629
 		}
 	}
@@ -113,7 +113,7 @@ pm_building_all_advanced = {
 			building_employment_aristocrats_add = 629
 			building_employment_capitalists_add = 1258
 			building_employment_officers_add = 2516
-			building_employment_peasants_add = 80503
+			building_employment_clerks_add = 80503
 			building_employment_soldiers_add = 10063
 		}
 		workforce_scaled = {
@@ -228,7 +228,7 @@ pm_building_all_advanced = {
 			building_aristocrats_shares_add = 39
 			building_capitalists_shares_add = 79
 			building_officers_shares_add = 157
-			building_peasants_shares_add = 5032
+			building_clerks_shares_add = 5032
 			building_soldiers_shares_add = 629
 		}
 	}
