@@ -57,7 +57,7 @@ pm_building_all_basic = {
 		workforce_scaled = {
 			building_output_gold_add = 91067
 
-			building_output_groceries_add = 17528
+			building_output_groceries_add = 27697
 
 			building_output_coal_add = 10200
 
@@ -119,37 +119,37 @@ pm_building_all_advanced = {
 		workforce_scaled = {
 			building_output_gold_add = 1020
 
-			building_output_automobiles_add = 14085
+			building_output_automobiles_add = 18853
 
-			building_output_coffee_add = 12500
+			building_output_coffee_add = 19187
 
-			building_output_fine_art_add = 37191
+			building_output_fine_art_add = 57662
 
-			building_output_fruit_add = 18527
+			building_output_fruit_add = 37215
 
-			building_output_groceries_add = 17528
+			building_output_groceries_add = 27697
 
-			building_output_luxury_clothes_add = 28031
+			building_output_luxury_clothes_add = 39675
 
-			building_output_luxury_furniture_add = 28100
+			building_output_luxury_furniture_add = 50788
 
-			building_output_meat_add = 16082
+			building_output_meat_add = 25074
 
-			building_output_porcelain_add = 28788
+			building_output_porcelain_add = 50258
 
-			building_output_radios_add = 27824
+			building_output_radios_add = 44508
 
-			building_output_services_add = 105028
+			building_output_services_add = 184847
 
-			building_output_sugar_add = 11881
+			building_output_sugar_add = 11586
 
-			building_output_tea_add = 15462
+			building_output_tea_add = 23792
 
-			building_output_telephones_add = 24243
+			building_output_telephones_add = 34661
 
-			building_output_transportation_add = 15910
+			building_output_transportation_add = 23582
 
-			building_output_wine_add = 10744
+			building_output_wine_add = 15118
 
 			building_output_aeroplanes_add = 10200
 
