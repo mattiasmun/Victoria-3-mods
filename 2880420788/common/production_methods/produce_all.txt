@@ -1,4 +1,4 @@
-﻿pm_building_all_disabled = {
+﻿pm_building_all_gold = {
 	texture = "gfx/interface/icons/production_method_icons/constructor.dds"
 	ai_weight = 0
 
