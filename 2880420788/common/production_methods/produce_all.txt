@@ -26,17 +26,18 @@
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 50
+			country_construction_add = 200
 			country_convoys_capacity_add = 2000
 			country_minting_add = 10000
-			country_weekly_innovation_add = 20
+			country_weekly_innovation_add = 40
 		}
 	}
 	state_modifiers = {
 		workforce_scaled = {
+			state_construction_mult = 0.4
 			state_infrastructure_add = 500
 			state_pop_qualifications_mult = 2
-			state_tax_capacity_add = 1000
+			state_tax_capacity_add = 1500
 		}
 	}
 }
@@ -89,17 +90,18 @@ pm_building_all_basic = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 50
+			country_construction_add = 200
 			country_convoys_capacity_add = 2000
 			country_minting_add = 10000
-			country_weekly_innovation_add = 20
+			country_weekly_innovation_add = 40
 		}
 	}
 	state_modifiers = {
 		workforce_scaled = {
+			state_construction_mult = 0.4
 			state_infrastructure_add = 500
 			state_pop_qualifications_mult = 2
-			state_tax_capacity_add = 1000
+			state_tax_capacity_add = 1500
 		}
 	}
 }
@@ -235,17 +237,18 @@ pm_building_all_advanced = {
 	country_modifiers = {
 		workforce_scaled = {
 			country_bureaucracy_add = 5000
-			country_construction_add = 50
+			country_construction_add = 200
 			country_convoys_capacity_add = 2000
 			country_minting_add = 10000
-			country_weekly_innovation_add = 20
+			country_weekly_innovation_add = 40
 		}
 	}
 	state_modifiers = {
 		workforce_scaled = {
+			state_construction_mult = 0.4
 			state_infrastructure_add = 500
 			state_pop_qualifications_mult = 2
-			state_tax_capacity_add = 1000
+			state_tax_capacity_add = 1500
 		}
 	}
 }
