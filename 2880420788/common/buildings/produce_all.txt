@@ -5,14 +5,13 @@
 
 	levels_per_mesh = 5
 
-
 	production_method_groups = {
 		pmg_all_operations
 	}
 
 	texture = "gfx/interface/icons/building_icons/base.dds"
 
-	required_construction = construction_cost_low
+	required_construction = construction_cost_very_low
 
 	ai_value = 2000
 }
