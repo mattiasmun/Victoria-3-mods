@@ -26,7 +26,7 @@ building_barracks = {
 
 	should_auto_expand = {
 		occupancy > 0.95
-		state.state_infrastructure_balance > 10
+		state.state_infrastructure_balance > 0
 		owner.construction_queue_duration < 200
 	}
 }
@@ -86,7 +86,7 @@ building_naval_base = {
 
 	should_auto_expand = {
 		occupancy > 0.95
-		state.state_infrastructure_balance > 10
+		state.state_infrastructure_balance > 0
 		owner.construction_queue_duration < 200
 	}
 }
