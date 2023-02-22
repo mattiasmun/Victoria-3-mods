@@ -14,7 +14,7 @@
 	required_construction = construction_cost_very_low
 
 	ai_value = 2000
-	
+
 	should_auto_expand = {
 		cash_reserves_ratio > 0.95
 		occupancy > 0.95
