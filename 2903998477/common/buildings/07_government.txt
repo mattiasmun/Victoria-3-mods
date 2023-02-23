@@ -48,7 +48,7 @@ building_government_administration = {
 
 	should_auto_expand = {
 		occupancy > 0.98
-		tax_capacity < tax_capacity_usage
+		tax_capacity < tax_capacity_usage + 20
 		state.state_infrastructure_balance > 10
 		owner.construction_queue_duration < 200
 	}
