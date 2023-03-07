@@ -25,7 +25,7 @@ building_barracks = {
 	required_construction = construction_cost_very_low
 
 	should_auto_expand = {
-		occupancy > 0.92
+		occupancy > 0.2
 		owner.construction_queue_duration < 200
 	}
 }
@@ -84,7 +84,7 @@ building_naval_base = {
 	}
 
 	should_auto_expand = {
-		occupancy > 0.92
+		occupancy > 0.1
 		owner.construction_queue_duration < 200
 	}
 }
