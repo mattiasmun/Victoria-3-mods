@@ -13,7 +13,7 @@
 	ai_value = 2000
 
 	should_auto_expand = {
-		cash_reserves_ratio > 0.2
+		cash_reserves_ratio > 0.01
 		occupancy > 0.95
 		state.state_infrastructure_balance > 10
 		owner.construction_queue_duration < 200

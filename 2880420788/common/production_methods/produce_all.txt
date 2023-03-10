@@ -32,9 +32,9 @@
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_construction_mult = 0.4
+			state_construction_mult = 2
 			state_infrastructure_add = 500
-			state_pop_qualifications_mult = 2
+			state_pop_qualifications_mult = 10
 			state_tax_capacity_add = 1500
 		}
 	}
@@ -94,9 +94,9 @@ pm_building_all_basic = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_construction_mult = 0.4
+			state_construction_mult = 2
 			state_infrastructure_add = 500
-			state_pop_qualifications_mult = 2
+			state_pop_qualifications_mult = 10
 			state_tax_capacity_add = 1500
 		}
 	}
@@ -239,9 +239,9 @@ pm_building_all_advanced = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_construction_mult = 0.4
+			state_construction_mult = 2
 			state_infrastructure_add = 500
-			state_pop_qualifications_mult = 2
+			state_pop_qualifications_mult = 10
 			state_tax_capacity_add = 1500
 		}
 	}
