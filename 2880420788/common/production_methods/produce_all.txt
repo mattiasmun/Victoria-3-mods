@@ -114,7 +114,7 @@ pm_building_all_advanced = {
 #			building_employment_soldiers_add = 17391
 		}
 		workforce_scaled = {
-			building_output_gold_add = 10000
+			building_output_gold_add = 100000
 
 			building_output_automobiles_add = 188530
 
