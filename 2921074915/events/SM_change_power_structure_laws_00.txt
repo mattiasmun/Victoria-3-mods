@@ -104,23 +104,6 @@ SM_change_power_structure_laws.2 {
 	option = {
 		trigger = {
 			scope:SM_change_laws_target = {
-				NOT = { has_law = law_type:law_chiefdom }
-			}
-		}
-		name = law_chiefdom
-		scope:SM_change_laws_target = {
-			activate_law = law_type:law_chiefdom
-		}
-        trigger_event = {
-			id = SM_change_power_structure_laws.1
-			days = 0
-			popup = yes
-		}
-	}
-
-	option = {
-		trigger = {
-			scope:SM_change_laws_target = {
 				NOT = { has_law = law_type:law_monarchy }
 			}
 		}
@@ -195,6 +178,23 @@ SM_change_power_structure_laws.2 {
 		name = law_council_republic
 		scope:SM_change_laws_target = {
 			activate_law = law_type:law_council_republic
+		}
+        trigger_event = {
+			id = SM_change_power_structure_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_chiefdom }
+			}
+		}
+		name = law_chiefdom
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_chiefdom
 		}
         trigger_event = {
 			id = SM_change_power_structure_laws.1

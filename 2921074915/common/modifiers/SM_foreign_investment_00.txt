@@ -13,6 +13,12 @@ SM_foreign_investment_provider_high = {
 	country_construction_add = -100
 }
 
+SM_foreign_investment_provider_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_construction_add = -500
+}
+
+
 SM_foreign_investment_receiver_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_construction_add = 5
@@ -26,7 +32,11 @@ SM_foreign_investment_receiver_medium = {
 SM_foreign_investment_receiver_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_construction_add = 100
-	
+}
+
+SM_foreign_investment_receiver_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_construction_add = 500
 }
 
 SM_block_industrial_expansion = {

@@ -60,9 +60,11 @@
  SM_foreign_investment_provider_low:0 "Provides low investment"
  SM_foreign_investment_provider_medium:0 "Provides medium investment"
  SM_foreign_investment_provider_high:0 "Provides high investment"
+ SM_foreign_investment_provider_very_high:0 "Provides very high investment"
  SM_foreign_investment_receiver_low:0 "Receives low investment"
  SM_foreign_investment_receiver_medium:0 "Receives medium investment"
  SM_foreign_investment_receiver_high:0 "Receives high investment"
+ SM_foreign_investment_receiver_very_high:0 "Receives very high investment"
  SM_block_industrial_expansion:0 "Manufacturing industry controls."
 
  SM_foreign_investment.low_investment.short_term:0 "Invest 5 [concept_construction] for 1 year."
@@ -74,6 +76,9 @@
  SM_foreign_investment.low_investment.long_term:0 "Invest 5 [concept_construction] for 10 years."
  SM_foreign_investment.medium_investment.long_term:0 "Invest 20 [concept_construction] for 10 years."
  SM_foreign_investment.high_investment.long_term:0 "Invest 100 [concept_construction] for 10 years."
+ SM_foreign_investment.very_high_investment.short_term:0 "Invest 500 [concept_construction] for 1 year."
+ SM_foreign_investment.very_high_investment.medium_term:0 "Invest 500 [concept_construction] for 3 years."
+ SM_foreign_investment.very_high_investment.long_term:0 "Invest 500 [concept_construction] for 10 years."
 
  SM_build_building_livestock_ranch_1:0 "Build #V 1#! $building_livestock_ranch$" 
  SM_build_building_livestock_ranch_5:0 "Build #V 5#! $building_livestock_ranch$" 
