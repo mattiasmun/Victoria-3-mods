@@ -28,7 +28,7 @@ template speed_button_1
 	size = { 24 31 }
 	using = speedometer_set_speed_properties
 	onclick = "[TimeKeeper.SetGameSpeed('(int32)0')]"
-	input_action = "speed_1"
+	shortcut = "speed_1"
 	tooltip = "CHANGE_SPEED_TOOLTIP_1"
 }
 template speed_button_2
@@ -38,7 +38,7 @@ template speed_button_2
 	size = { 32 34 }
 	using = speedometer_set_speed_properties
 	onclick = "[TimeKeeper.SetGameSpeed('(int32)1')]"
-	input_action = "speed_2"
+	shortcut = "speed_2"
 	tooltip = "CHANGE_SPEED_TOOLTIP_2"
 }
 template speed_button_3
@@ -48,7 +48,7 @@ template speed_button_3
 	size = { 37 23 }
 	using = speedometer_set_speed_properties
 	onclick = "[TimeKeeper.SetGameSpeed('(int32)2')]"
-	input_action = "speed_3"
+	shortcut = "speed_3"
 	tooltip = "CHANGE_SPEED_TOOLTIP_3"
 }
 template speed_button_4
@@ -58,7 +58,7 @@ template speed_button_4
 	size = { 32 34 }
 	using = speedometer_set_speed_properties
 	onclick = "[TimeKeeper.SetGameSpeed('(int32)3')]"
-	input_action = "speed_4"
+	shortcut = "speed_4"
 	tooltip = "CHANGE_SPEED_TOOLTIP_4"
 }
 template speed_button_5
@@ -68,7 +68,7 @@ template speed_button_5
 	size = { 24 31 }
 	using = speedometer_set_speed_properties
 	onclick = "[TimeKeeper.SetGameSpeed('(int32)4')]"
-	input_action = "speed_5"
+	shortcut = "speed_5"
 	tooltip = "CHANGE_SPEED_TOOLTIP_5"
 }
 
@@ -473,7 +473,7 @@ types timekeeper
 				size = { 180 80 }
 				parentanchor = right
 				name = "tutorial_highlight_speedometer"
-				position = { -53 1 }
+				position = { -43 1 }
 				
 				# animation triggers
 				widget = {
@@ -654,7 +654,7 @@ types timekeeper
 					onclick = "[TimeKeeper.TogglePause]"
 					tooltip = "[TimeKeeper.GetTogglePauseTooltip]"
 					using = play_continue_button_sound
-					input_action = "pause"
+					shortcut = "pause"
 				}
 				button = {
 					position = { 25 14 }
@@ -673,7 +673,7 @@ types timekeeper
 					onclick = "[TimeKeeper.TogglePause]"
 					tooltip = "[TimeKeeper.GetTogglePauseTooltip]"
 					using = play_pause_button_sound
-					input_action = "pause"
+					shortcut = "pause"
 				}
 				
 				
@@ -885,7 +885,8 @@ types timekeeper
 					onclick = "[TimeKeeper.DecreaseGameSpeed]"
 					tooltip = "[TimeKeeper.GetDecreaseSpeedTooltip]"
 					using = decrease_button_sound
-					input_action = "decrease_speed"
+					shortcut = "decrease_speed"
+					shortcut = "decrease_speed_2"
 				}			
 				
 				button = {
@@ -896,7 +897,8 @@ types timekeeper
 					onclick = "[TimeKeeper.IncreaseGameSpeed]"
 					tooltip = "[TimeKeeper.GetIncreaseSpeedTooltip]"
 					using = increase_button_sound
-					input_action = "increase_speed"
+					shortcut = "increase_speed"
+					shortcut = "increase_speed_2"
 				}
 			}
 			
@@ -908,39 +910,43 @@ types timekeeper
 				spacing = 2
 				
 				### menu
-				flowcontainer = {
-					direction = horizontal
-					parentanchor = hcenter
-					spacing = 2
-
-					button_icon_settings = {
-						size = { 24 24 }
-						onclick = "[ToggleMessageSettings]"
-						parentanchor = vcenter
-					}
-
-					button_icon_menu = {
-						size = { 32 32 }
-						onclick = "[ToggleMainMenu]"
-						enabled = "[Not( IsGameOverScreenShown )]"
-						parentanchor = vcenter
-					}
-
+				button_icon_menu = {
+					size = { 32 32 }
+					onclick = "[ToggleMainMenu]"
+					enabled = "[Not( IsGameOverScreenShown )]"
 				}
 				
+				### other
 				flowcontainer = {
-					direction = horizontal
-					parentanchor = hcenter
-					spacing = 2
+					direction = vertical
 					
-					button_icon_vickypedia = {
-						size = { 24 24 }
-						onclick = "[ToggleEncyclopedia]"
-					}
-					button_icon_music_player = {
-						size = { 24 24 }
-						onclick = "[ToggleMusicPlayer]"
-					}
+					#background = {
+					#	using = default_background
+					#	alpha = 1
+					#	#visible = when other is shown
+					#}
+					
+					#button_icon_other = {
+						button_icon_vickypedia = {
+							size = { 32 32 }
+							onclick = "[ToggleEncyclopedia]"
+							#onclick = toggle other
+						}
+						
+						#flowcontainer = {
+						#	#visible = when other is shown
+						#	direction = vertical
+						#	
+						#	button_icon_vickypedia = {
+						#		size = { 32 32 }
+						#		#onclick = "[]"
+						#	}
+						#	button_icon_music_player = {
+						#		size = { 32 32 }
+						#		#onclick = "[]"
+						#	}
+						#}
+					#}	
 				}
 			}
 		}
