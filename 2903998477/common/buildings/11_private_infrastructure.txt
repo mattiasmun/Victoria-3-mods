@@ -23,8 +23,8 @@ building_railway = {
 			cash_reserves_ratio > 0.5
 			is_subsidized = yes
 		}
-		occupancy > 0.98
-		state.state_infrastructure_balance < 20
+		occupancy > 0.90
+		state.state_infrastructure_balance < 50
 		owner.construction_queue_duration < 200
 	}
 }
