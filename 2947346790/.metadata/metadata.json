@@ -1,9 +1,9 @@
 {
   "name" : "Add Arable Land",
-  "id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
+  "id" : "2947346790",
+  "version" : "1.0",
+  "supported_game_version" : "1.2.*",
+  "short_description" : "This mod adds a Button that allows you to add Arable land to a state. The button is right next to the subsistence buildings.",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
