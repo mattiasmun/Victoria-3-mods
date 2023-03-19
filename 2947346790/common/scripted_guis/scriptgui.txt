@@ -1,0 +1,8 @@
+se_add_landstate = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 100
+		}
+    }
+}
