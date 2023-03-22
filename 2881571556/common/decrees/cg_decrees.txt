@@ -274,8 +274,8 @@ decree_cg_birhts = {
     }
 
     modifier = {
-        state_birth_rate_mult = 2.5
-        state_accepted_birth_rate_mult = 2.5
+        state_birth_rate_mult = 0.1
+        state_accepted_birth_rate_mult = 55
     }
 
     cost = 0
