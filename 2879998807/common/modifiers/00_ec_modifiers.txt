@@ -1,6 +1,6 @@
 ﻿ec_harem = {
 	state_migration_pull_mult = 2.0
-	state_birth_rate_mult = 1.0
+	state_accepted_birth_rate_mult = 1.0
 }
 
 ec_super = {
