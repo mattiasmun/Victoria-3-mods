@@ -1,0 +1,9 @@
+﻿l_korean:
+ DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
+
+ build_railways:0 "철도 건설"
+ build_railways_desc:0 "모든 곳에 충분한 철도를 건설하여 시장 접근성을 완벽하게 확보합니다."
+ build_railways_tooltip:0 "더 많은 철도를 건설하려면 클릭하십시오."
+ build_administrations:0 "정부 행정 청사 건설"
+ build_administrations_desc:0 "모든 곳에 충분한 정부 행정 청사를 건설하여 조세 역량을 완벽하게 확보합니다"
+ build_administrations_tooltip:0 "더 많은 정부 행정 청사를 건설하려면 클릭하십시오."
