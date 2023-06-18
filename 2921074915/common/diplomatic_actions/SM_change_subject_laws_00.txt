@@ -1,12 +1,12 @@
-﻿SM_change_subject_power_structure_laws = {
+﻿SM_change_subject_laws = {
 	requires_approval = no
     should_notify_third_parties = no
 	show_effect_in_tooltip = yes
     possible = {
-        is_at_war = no
 		scope:target_country = {
 			NOT = { 
-				is_country_type = decentralized 
+				is_country_type = decentralized
+				is_subject_type = subject_type_customs_union
 			}
 			is_at_war = no
 		}
@@ -16,8 +16,9 @@
 		scope:target_country = {
 			NOT = { 
 				is_country_type = decentralized 
+				is_subject_type = subject_type_customs_union
 			}
-            is_direct_subject_of = root
+            is_subject_of = root
 		}
 	}
 	
@@ -26,7 +27,7 @@
 			save_scope_as = SM_change_laws_target
 		}
 		trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}

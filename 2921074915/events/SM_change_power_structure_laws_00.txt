@@ -1,4 +1,4 @@
-﻿
+
 namespace = SM_change_power_structure_laws
 
 SM_change_power_structure_laws.1 = {
@@ -12,6 +12,9 @@ SM_change_power_structure_laws.1 = {
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
+
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
 
 	option = {
 		name = CANCEL
@@ -82,6 +85,16 @@ SM_change_power_structure_laws.1 = {
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 SM_change_power_structure_laws.2 {
 	type = country_event
@@ -95,6 +108,9 @@ SM_change_power_structure_laws.2 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -112,7 +128,7 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_monarchy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -129,7 +145,7 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_presidential_republic
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -146,7 +162,7 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_parliamentary_republic
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -163,7 +179,7 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_theocracy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -180,7 +196,7 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_council_republic
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -197,12 +213,22 @@ SM_change_power_structure_laws.2 {
 			activate_law = law_type:law_chiefdom
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.3 {
@@ -217,6 +243,9 @@ SM_change_power_structure_laws.3 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -234,7 +263,24 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_autocracy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_technocracy }
+			}
+		}
+		name = law_technocracy
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_technocracy
+		}
+        trigger_event = {
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -251,7 +297,7 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_oligarchy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -268,7 +314,7 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_landed_voting
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -285,7 +331,7 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_wealth_voting
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -302,7 +348,7 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_census_voting
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -319,24 +365,7 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_universal_suffrage
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
-			days = 0
-			popup = yes
-		}
-	}
-
-	option = {
-		trigger = {
-			scope:SM_change_laws_target = {
-				NOT = { has_law = law_type:law_elder_council }
-			}
-		}
-		name = law_elder_council
-		scope:SM_change_laws_target = {
-			activate_law = law_type:law_elder_council
-		}
-        trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -353,12 +382,56 @@ SM_change_power_structure_laws.3 {
 			activate_law = law_type:law_anarchy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_single_party_state }
+			}
+		}
+		name = law_single_party_state
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_single_party_state
+		}
+        trigger_event = {
+			id = SM_change_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_elder_council }
+			}
+		}
+		name = law_elder_council
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_elder_council
+		}
+        trigger_event = {
+			id = SM_change_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.4 {
@@ -373,6 +446,9 @@ SM_change_power_structure_laws.4 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -390,7 +466,7 @@ SM_change_power_structure_laws.4 {
 			activate_law = law_type:law_ethnostate
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -407,7 +483,7 @@ SM_change_power_structure_laws.4 {
 			activate_law = law_type:law_national_supremacy
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -424,7 +500,7 @@ SM_change_power_structure_laws.4 {
 			activate_law = law_type:law_racial_segregation
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -441,7 +517,7 @@ SM_change_power_structure_laws.4 {
 			activate_law = law_type:law_cultural_exclusion
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -458,12 +534,22 @@ SM_change_power_structure_laws.4 {
 			activate_law = law_type:law_multicultural
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.5 {
@@ -478,6 +564,9 @@ SM_change_power_structure_laws.5 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -495,7 +584,7 @@ SM_change_power_structure_laws.5 {
 			activate_law = law_type:law_state_religion
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -512,7 +601,7 @@ SM_change_power_structure_laws.5 {
 			activate_law = law_type:law_freedom_of_conscience
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -529,12 +618,39 @@ SM_change_power_structure_laws.5 {
 			activate_law = law_type:law_total_separation
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_state_atheism }
+			}
+		}
+		name = law_state_atheism
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_state_atheism
+		}
+        trigger_event = {
+			id = SM_change_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.6 {
@@ -549,6 +665,9 @@ SM_change_power_structure_laws.6 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -566,7 +685,7 @@ SM_change_power_structure_laws.6 {
 			activate_law = law_type:law_hereditary_bureaucrats
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -583,7 +702,7 @@ SM_change_power_structure_laws.6 {
 			activate_law = law_type:law_appointed_bureaucrats
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -600,12 +719,22 @@ SM_change_power_structure_laws.6 {
 			activate_law = law_type:law_elected_bureaucrats
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.7 {
@@ -620,6 +749,9 @@ SM_change_power_structure_laws.7 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -637,7 +769,7 @@ SM_change_power_structure_laws.7 {
 			activate_law = law_type:law_peasant_levies
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -654,7 +786,7 @@ SM_change_power_structure_laws.7 {
 			activate_law = law_type:law_national_militia
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -671,7 +803,7 @@ SM_change_power_structure_laws.7 {
 			activate_law = law_type:law_mass_conscription
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -688,12 +820,22 @@ SM_change_power_structure_laws.7 {
 			activate_law = law_type:law_professional_army
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_power_structure_laws.8 {
@@ -708,6 +850,9 @@ SM_change_power_structure_laws.8 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -725,7 +870,7 @@ SM_change_power_structure_laws.8 {
 			activate_law = law_type:law_no_home_affairs
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -742,7 +887,7 @@ SM_change_power_structure_laws.8 {
 			activate_law = law_type:law_national_guard
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -759,7 +904,7 @@ SM_change_power_structure_laws.8 {
 			activate_law = law_type:law_secret_police
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -776,10 +921,20 @@ SM_change_power_structure_laws.8 {
 			activate_law = law_type:law_guaranteed_liberties
 		}
         trigger_event = {
-			id = SM_change_power_structure_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_power_structure_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }

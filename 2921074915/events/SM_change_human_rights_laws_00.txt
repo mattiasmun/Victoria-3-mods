@@ -1,4 +1,4 @@
-﻿
+
 namespace = SM_change_human_rights_laws
 
 SM_change_human_rights_laws.1 = {
@@ -12,6 +12,9 @@ SM_change_human_rights_laws.1 = {
 	event_image = {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
+
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
 
 	option = {
 		name = CANCEL
@@ -82,6 +85,16 @@ SM_change_human_rights_laws.1 = {
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 SM_change_human_rights_laws.2 {
 	type = country_event
@@ -95,6 +108,9 @@ SM_change_human_rights_laws.2 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -112,7 +128,7 @@ SM_change_human_rights_laws.2 {
 			activate_law = law_type:law_outlawed_dissent
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -129,7 +145,7 @@ SM_change_human_rights_laws.2 {
 			activate_law = law_type:law_censorship
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -146,7 +162,7 @@ SM_change_human_rights_laws.2 {
 			activate_law = law_type:law_right_of_assembly
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -163,12 +179,22 @@ SM_change_human_rights_laws.2 {
 			activate_law = law_type:law_protected_speech
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.3 {
@@ -183,6 +209,9 @@ SM_change_human_rights_laws.3 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -192,32 +221,15 @@ SM_change_human_rights_laws.3 {
 	option = {
 		trigger = {
 			scope:SM_change_laws_target = {
-				NOT = { has_law = law_type:law_serfdom }
+				NOT = { has_law = law_type:law_no_workers_rights }
 			}
 		}
-		name = law_serfdom
+		name = law_no_workers_rights
 		scope:SM_change_laws_target = {
-			activate_law = law_type:law_serfdom
+			activate_law = law_type:law_no_workers_rights
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
-			days = 0
-			popup = yes
-		}
-	}
-
-	option = {
-		trigger = {
-			scope:SM_change_laws_target = {
-				NOT = { has_law = law_type:law_serfdom_banned }
-			}
-		}
-		name = law_serfdom_banned
-		scope:SM_change_laws_target = {
-			activate_law = law_type:law_serfdom_banned
-		}
-        trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -234,7 +246,7 @@ SM_change_human_rights_laws.3 {
 			activate_law = law_type:law_regulatory_bodies
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -251,12 +263,22 @@ SM_change_human_rights_laws.3 {
 			activate_law = law_type:law_worker_protections
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.4 {
@@ -271,6 +293,9 @@ SM_change_human_rights_laws.4 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -288,7 +313,7 @@ SM_change_human_rights_laws.4 {
 			activate_law = law_type:law_child_labor_allowed
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -305,7 +330,7 @@ SM_change_human_rights_laws.4 {
 			activate_law = law_type:law_restricted_child_labor
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -322,12 +347,22 @@ SM_change_human_rights_laws.4 {
 			activate_law = law_type:law_compulsory_primary_school
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.5 {
@@ -342,6 +377,9 @@ SM_change_human_rights_laws.5 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -359,7 +397,7 @@ SM_change_human_rights_laws.5 {
 			activate_law = law_type:law_no_womens_rights
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -376,7 +414,7 @@ SM_change_human_rights_laws.5 {
 			activate_law = law_type:law_women_own_property
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -393,7 +431,7 @@ SM_change_human_rights_laws.5 {
 			activate_law = law_type:law_women_in_the_workplace
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -410,12 +448,22 @@ SM_change_human_rights_laws.5 {
 			activate_law = law_type:law_womens_suffrage
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.6 {
@@ -430,6 +478,9 @@ SM_change_human_rights_laws.6 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -447,7 +498,7 @@ SM_change_human_rights_laws.6 {
 			activate_law = law_type:law_no_social_security
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -464,7 +515,7 @@ SM_change_human_rights_laws.6 {
 			activate_law = law_type:law_poor_laws
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -481,7 +532,7 @@ SM_change_human_rights_laws.6 {
 			activate_law = law_type:law_wage_subsidies
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -498,12 +549,22 @@ SM_change_human_rights_laws.6 {
 			activate_law = law_type:law_old_age_pension
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.7 {
@@ -518,6 +579,9 @@ SM_change_human_rights_laws.7 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -535,7 +599,7 @@ SM_change_human_rights_laws.7 {
 			activate_law = law_type:law_no_migration_controls
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -552,7 +616,7 @@ SM_change_human_rights_laws.7 {
 			activate_law = law_type:law_migration_controls
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -569,12 +633,22 @@ SM_change_human_rights_laws.7 {
 			activate_law = law_type:law_closed_borders
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }
 
 SM_change_human_rights_laws.8 {
@@ -589,6 +663,9 @@ SM_change_human_rights_laws.8 {
 		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
 	}
 	
+    minor_left_icon = root
+	minor_right_icon = scope:SM_change_laws_target
+
 	option = {
 		name = CANCEL
 		default_option = yes
@@ -606,7 +683,7 @@ SM_change_human_rights_laws.8 {
 			activate_law = law_type:law_slavery_banned
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -623,7 +700,7 @@ SM_change_human_rights_laws.8 {
 			activate_law = law_type:law_debt_slavery
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -640,7 +717,7 @@ SM_change_human_rights_laws.8 {
 			activate_law = law_type:law_slave_trade
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
@@ -657,10 +734,20 @@ SM_change_human_rights_laws.8 {
 			activate_law = law_type:law_legacy_slavery
 		}
         trigger_event = {
-			id = SM_change_human_rights_laws.1
+			id = SM_change_laws.1
 			days = 0
 			popup = yes
 		}
 	}
 
+
+    option = {
+        name = BACK
+        default_option = yes
+        trigger_event = {
+            id = SM_change_human_rights_laws.1
+            days = 0
+            popup = yes
+        }
+	}
 }

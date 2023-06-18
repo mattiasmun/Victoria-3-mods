@@ -10,8 +10,9 @@
 		scope:target_country = {
 			NOT = { 
 				is_country_type = decentralized 
+				is_subject_type = subject_type_customs_union
 			}
-            is_direct_subject_of = root
+            is_subject_of = root
 		}
 	}
     accept_effect = {

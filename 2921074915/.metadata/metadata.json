@@ -2,7 +2,7 @@
   "name" : "Subject Manager",
   "id" : "2921074915",
   "version" : "0.2",
-  "supported_game_version" : "1.2.*",
+  "supported_game_version" : "1.3.*",
   "picture": "thumbnail.png",
   "short_description" : "A mod that allows to control subjects in greater detail.",
   "tags" : ["Diplomacy", "Gameplay"],
