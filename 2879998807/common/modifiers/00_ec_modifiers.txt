@@ -58,8 +58,8 @@ ec_super = {
 	state_colony_growth_speed_mult = 9
 
 	state_tax_capacity_mult = 6.0
-	state_tax_collection_mult = 0.9
-	state_infrastructure_mult = 0.9
+	state_tax_collection_mult = 1.2
+	state_infrastructure_mult = 1.8
 	state_construction_mult = 6.0
 #	state_welfare_payments_add = -0.3
 	state_education_access_add = 2.0
