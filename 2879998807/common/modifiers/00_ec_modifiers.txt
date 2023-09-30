@@ -1,7 +1,7 @@
 ﻿ec_harem = {
 	state_migration_pull_mult = 2.0
-	state_birth_rate_mult = -0.5
-	state_accepted_birth_rate_mult = 2.0
+	state_birth_rate_mult = -0.6
+	state_accepted_birth_rate_mult = 6.0
 }
 
 ec_super = {
@@ -27,11 +27,11 @@ ec_super = {
 	country_bureaucracy_add = 500
 	country_authority_add = 500
 	country_influence_add = 500
-	country_authority_mult = 1.0
-	country_influence_mult = 1.0
-	country_bureaucracy_mult = 1.0
+	country_authority_mult = 1.2
+	country_influence_mult = 1.2
+	country_bureaucracy_mult = 1.2
 
-	country_tax_income_add = 9999999
+	country_tax_income_add = 99999999
 	country_prestige_mult = 0.2
 	country_law_enactment_time_mult = -0.6
 	country_law_enactment_success_add = 0.7
