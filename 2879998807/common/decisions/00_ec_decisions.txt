@@ -1,13 +1,13 @@
 ec_super_decision_add = {
 	is_shown = {
 		is_ai = no
-        NOT = {                    
+        NOT = {
             has_modifier = ec_super
         }
 	}
-	
+
 	when_taken = {
-        add_modifier = ec_super    
+        add_modifier = ec_super
 	}
 
 	ai_chance = {
@@ -20,9 +20,9 @@ ec_super_decision_remove = {
 		is_ai = no
         has_modifier = ec_super
 	}
-	
-	when_taken = {        	
-        remove_modifier = ec_super      
+
+	when_taken = {
+        remove_modifier = ec_super
 	}
 
 	ai_chance = {
@@ -33,13 +33,13 @@ ec_super_decision_remove = {
 ec_super_v_decision_add = {
 	is_shown = {
 		is_ai = no
-        NOT = {                    
-            has_modifier = ec_super_v 
+        NOT = {
+            has_modifier = ec_super_v
         }
 	}
-	
+
 	when_taken = {
-        add_modifier = ec_super_v 
+        add_modifier = ec_super_v
 	}
 
 	ai_chance = {
@@ -50,11 +50,11 @@ ec_super_v_decision_add = {
 ec_super_v_decision_remove = {
 	is_shown = {
 		is_ai = no
-        has_modifier = ec_super_v 
+        has_modifier = ec_super_v
 	}
-	
-	when_taken = {        	
-        remove_modifier = ec_super_v 
+
+	when_taken = {
+        remove_modifier = ec_super_v
 	}
 
 	ai_chance = {
@@ -65,13 +65,13 @@ ec_super_v_decision_remove = {
 ec_harem_decision_add = {
 	is_shown = {
 		is_ai = no
-        NOT = {                    
-            has_modifier = ec_harem 
+        NOT = {
+            has_modifier = ec_harem
         }
 	}
-	
+
 	when_taken = {
-        add_modifier = ec_harem 
+        add_modifier = ec_harem
 	}
 
 	ai_chance = {
@@ -82,11 +82,11 @@ ec_harem_decision_add = {
 ec_harem_decision_remove = {
 	is_shown = {
 		is_ai = no
-        has_modifier = ec_harem 
+        has_modifier = ec_harem
 	}
-	
-	when_taken = {        	
-        remove_modifier = ec_harem 
+
+	when_taken = {
+        remove_modifier = ec_harem
 	}
 
 	ai_chance = {
