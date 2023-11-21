@@ -1,103 +1,39 @@
-﻿pm_building_all_gold = {
+﻿pm_building_all_disabled = {
 	texture = "gfx/interface/icons/production_method_icons/constructor.dds"
-	ai_weight = 0
-
-	building_modifiers = {
-		level_scaled = {
-#			building_employment_academics_add = 8696
-			building_employment_clerks_add = 500000
-			building_employment_machinists_add = 500000
-#			building_employment_officers_add = 4348
-#			building_employment_soldiers_add = 17391
-		}
-		workforce_scaled = {
-			building_output_gold_add = 1000000
-		}
-		unscaled = {
-#			building_academics_shares_add = 435
-			building_clerks_shares_add = 25000
-			building_machinists_shares_add = 25000
-#			building_officers_shares_add = 217
-#			building_soldiers_shares_add = 870
-		}
-	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_bureaucracy_add = 50000
-			country_construction_add = 2000
-			country_convoys_capacity_add = 20000
-			country_minting_add = 100000
-			country_weekly_innovation_add = 400
-		}
-	}
-	state_modifiers = {
-		workforce_scaled = {
-			state_construction_mult = 20
-			state_infrastructure_add = 5000
-			state_pop_qualifications_mult = 100
-			state_tax_capacity_add = 15000
-		}
-	}
+	ai_weight = 100000
 }
+
 
 pm_building_all_basic = {
 	texture = "gfx/interface/icons/production_method_icons/production.dds"
-	ai_weight = 0
 
 	building_modifiers = {
 		level_scaled = {
-#			building_employment_academics_add = 8696
-			building_employment_clerks_add = 500000
-			building_employment_machinists_add = 500000
-#			building_employment_officers_add = 4348
-#			building_employment_soldiers_add = 17391
-		}
-		workforce_scaled = {
-			building_output_gold_add = 910670
+			building_laborers_shares_add = 2
 
-			building_output_groceries_add = 276970
+			building_employment_laborers_add = 3000
 
-			building_output_coal_add = 100000
+			building_employment_machinists_add = 200
 
-			building_output_fabric_add = 100000
+			goods_output_furniture_add = 60
+	                 
+			goods_output_fabric_add = 60
 
-			building_output_furniture_add = 100000
+			goods_output_tools_add = 60
 
-			building_output_iron_add = 100000
+			goods_output_groceries_add = 60
 
-			building_output_lead_add = 100000
+			goods_output_paper_add = 60
 
-			building_output_paper_add = 100000
+			goods_output_wood_add = 60
 
-			building_output_sulfur_add = 100000
+			goods_output_coal_add = 60
 
-			building_output_tools_add = 100000
+			goods_output_iron_add = 60
 
-			building_output_wood_add = 100000
-		}
-		unscaled = {
-#			building_academics_shares_add = 435
-			building_clerks_shares_add = 25000
-			building_machinists_shares_add = 25000
-#			building_officers_shares_add = 217
-#			building_soldiers_shares_add = 870
-		}
-	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_bureaucracy_add = 50000
-			country_construction_add = 2000
-			country_convoys_capacity_add = 20000
-			country_minting_add = 100000
-			country_weekly_innovation_add = 400
-		}
-	}
-	state_modifiers = {
-		workforce_scaled = {
-			state_construction_mult = 20
-			state_infrastructure_add = 5000
-			state_pop_qualifications_mult = 100
-			state_tax_capacity_add = 15000
+			goods_output_lead_add = 60
+
+			goods_output_sulfur_add = 60
 		}
 	}
 }
@@ -107,142 +43,117 @@ pm_building_all_advanced = {
 
 	building_modifiers = {
 		level_scaled = {
-#			building_employment_academics_add = 8696
-			building_employment_clerks_add = 500000
-			building_employment_machinists_add = 500000
-#			building_employment_officers_add = 4348
-#			building_employment_soldiers_add = 17391
-		}
-		workforce_scaled = {
-			building_output_gold_add = 100000
+			building_laborers_shares_add = 2
+			
+			building_employment_laborers_add = 6000
 
-			building_output_automobiles_add = 188530
+			building_employment_machinists_add = 500
 
-			building_output_coffee_add = 191870
+			goods_output_services_add = 60
 
-			building_output_fine_art_add = 576620
+			goods_output_fine_art_add = 60
 
-			building_output_fruit_add = 372150
+			goods_output_furniture_add = 60
 
-			building_output_groceries_add = 276970
+			goods_output_clothes_add = 60
 
-			building_output_luxury_clothes_add = 396750
+			goods_output_tools_add = 60
 
-			building_output_luxury_furniture_add = 507880
+			goods_output_glass_add = 60
 
-			building_output_meat_add = 250740
+			goods_output_steel_add = 60
 
-			building_output_porcelain_add = 502580
+			goods_output_liquor_add = 60
 
-			building_output_radios_add = 445080
+			goods_output_groceries_add = 60
 
-			building_output_services_add = 1848470
+			goods_output_luxury_clothes_add = 60
 
-			building_output_sugar_add = 115860
+			goods_output_luxury_furniture_add = 60
 
-			building_output_tea_add = 237920
+			goods_output_porcelain_add = 60
 
-			building_output_telephones_add = 346610
+			goods_output_fertilizer_add = 60
 
-			building_output_transportation_add = 235820
+			goods_output_explosives_add = 60
 
-			building_output_wine_add = 151180
+			goods_output_ammunition_add = 60
 
-			building_output_aeroplanes_add = 100000
+			goods_output_artillery_add = 60
 
-			building_output_ammunition_add = 100000
+			goods_output_engines_add = 60
 
-			building_output_artillery_add = 100000
+			goods_output_clippers_add = 60
 
-			building_output_clippers_add = 100000
+			goods_output_steamers_add = 60
 
-			building_output_clothes_add = 100000
+			goods_output_manowars_add = 60
 
-			building_output_coal_add = 100000
+			goods_output_ironclads_add = 60
 
-			building_output_dye_add = 100000
+			goods_output_automobiles_add = 60
 
-			building_output_electricity_add = 100000
+			goods_output_aeroplanes_add = 60
 
-			building_output_engines_add = 100000
+			goods_output_tanks_add = 60
 
-			building_output_explosives_add = 100000
+			goods_output_radios_add = 60
 
-			building_output_fabric_add = 100000
+			goods_output_telephones_add = 60
 
-			building_output_fertilizer_add = 100000
+			goods_output_grain_add = 60
 
-			building_output_fish_add = 100000
+			goods_output_fish_add = 60
 
-			building_output_furniture_add = 100000
+			goods_output_meat_add = 60
 
-			building_output_glass_add = 100000
+			goods_output_fruit_add = 60
 
-			building_output_grain_add = 100000
+			goods_output_wine_add = 60
 
-			building_output_hardwood_add = 100000
+			goods_output_fabric_add = 60
 
-			building_output_iron_add = 100000
+			goods_output_wood_add = 60
 
-			building_output_ironclads_add = 100000
+			goods_output_sugar_add = 60
 
-			building_output_lead_add = 100000
+			goods_output_coal_add = 60
 
-			building_output_liquor_add = 100000
+			goods_output_iron_add = 60
 
-			building_output_literature_add = 100000
+			goods_output_lead_add = 60
 
-			building_output_manowars_add = 100000
+			goods_output_oil_add = 60
 
-			building_output_steamers_add = 100000
+			goods_output_gold_add = 60
 
-			building_output_steel_add = 100000
+			goods_output_sulfur_add = 60
 
-			building_output_tanks_add = 100000
+			goods_output_hardwood_add = 60
 
-			building_output_tools_add = 100000
+			goods_output_rubber_add = 60
 
-			building_output_oil_add = 100000
+			goods_output_coffee_add = 60
 
-			building_output_opium_add = 100000
+			goods_output_dye_add = 60
 
-			building_output_paper_add = 100000
+			goods_output_opium_add = 60
 
-			building_output_rubber_add = 100000
+			goods_output_tea_add = 60
 
-			building_output_silk_add = 100000
+			goods_output_silk_add = 60
 
-			building_output_small_arms_add = 100000
+			goods_output_tobacco_add = 60
 
-			building_output_sulfur_add = 100000
+			goods_output_small_arms_add = 60
 
-			building_output_tobacco_add = 100000
+			goods_output_paper_add = 60
 
-			building_output_wood_add = 100000
-		}
-		unscaled = {
-#			building_academics_shares_add = 435
-			building_clerks_shares_add = 25000
-			building_machinists_shares_add = 25000
-#			building_officers_shares_add = 217
-#			building_soldiers_shares_add = 870
-		}
-	}
-	country_modifiers = {
-		workforce_scaled = {
-			country_bureaucracy_add = 50000
-			country_construction_add = 2000
-			country_convoys_capacity_add = 20000
-			country_minting_add = 100000
-			country_weekly_innovation_add = 400
-		}
-	}
-	state_modifiers = {
-		workforce_scaled = {
-			state_construction_mult = 20
-			state_infrastructure_add = 5000
-			state_pop_qualifications_mult = 100
-			state_tax_capacity_add = 15000
+			goods_output_literature_add = 60
+
+			goods_output_electricity_add = 60
+
+			goods_output_transportation_add = 60         
 		}
 	}
 }
