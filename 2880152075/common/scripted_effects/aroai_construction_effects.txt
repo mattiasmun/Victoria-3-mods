@@ -484,7 +484,7 @@ aroai_start_building_construction = {
                                         $class$ = 5 # Agriculture
                                     }
                                 } 
-                                value = construction_cost_low
+                                value = construction_cost_very_low
                             }
 
                             # Government, port, "heavy" resources
@@ -500,7 +500,7 @@ aroai_start_building_construction = {
                                         # }
                                     # }
                                 # }
-                                # value = construction_cost_medium
+                                # value = construction_cost_very_low
                             # }
 
                             # First check if building is "very_high" cause there's no separate class with them
@@ -509,7 +509,7 @@ aroai_start_building_construction = {
                                     $id$ >= 44 # Range of building types with very high cost
                                     $id$ <= 48
                                 }
-                                value = construction_cost_very_high
+                                value = construction_cost_very_low
                             }
 
                             # Then check if it's "high" building
@@ -520,12 +520,12 @@ aroai_start_building_construction = {
                                         $class$ = 6 # Industry
                                     }
                                 }
-                                value = construction_cost_high
+                                value = construction_cost_very_low
                             }
 
                             # Fallback
                             else = {
-                                value = construction_cost_medium
+                                value = construction_cost_very_low
                             }
 
                             # Formatting
