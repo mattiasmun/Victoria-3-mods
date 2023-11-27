@@ -14,6 +14,6 @@
 
 	required_construction = construction_cost_very_low
 
-	ai_value = -1
+	ai_value = 0
 
 }
