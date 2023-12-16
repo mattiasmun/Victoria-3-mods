@@ -1,3 +1,0 @@
-﻿l_english:
- 
- NEW_CONSTRUCTION_QUEUE:0 "#v [GetPlayer.GetNumActiveConstructionQueueElements] Under Construction #! [GetPlayer.GetNumInactiveConstructionQueueElements|=]"

@@ -1,9 +1,0 @@
-﻿l_turkish:
- DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
-
- build_railways:0 "Altyapılar İnşa Et"
- build_railways_desc:0 "Pazara tam erişim sağlamak için her yere yeterli sayıda demiryolu ekler"
- build_railways_tooltip:0 "Daha fazla demiryolu inşa etmek için tıklayın"
- build_administrations:0 "Devlet Yönetim Binaları İnşa Et"
- build_administrations_desc:0 "Vergilendirme kapasitesini sağlamak için her yere yeterli sayıda devlet yönetim binası ekler"
- build_administrations_tooltip:0 "Daha fazla devlet yönetim binası kurmak için tıklayın"

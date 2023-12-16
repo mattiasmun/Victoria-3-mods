@@ -1,3 +1,0 @@
-﻿l_japanese:
- 
- NEW_CONSTRUCTION_QUEUE:0 "#v [GetPlayer.GetNumActiveConstructionQueueElements] 建設中 #! [GetPlayer.GetNumInactiveConstructionQueueElements|=]"
