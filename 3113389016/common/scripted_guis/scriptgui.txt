@@ -1,0 +1,53 @@
+se_add_landstate = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 100
+		}
+    }
+}
+
+se_add_landstate+ = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 1000
+		}
+    }
+}
+
+se_add_landstate++ = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 10000
+		}
+    }
+}
+
+se_add_landstate- = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = -100
+		}
+    }
+}
+
+se_add_landstate-- = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = -1000
+		}
+    }
+}
+
+se_add_landstate--- = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = -10000
+		}
+    }
+}

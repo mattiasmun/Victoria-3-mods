@@ -1,0 +1,14 @@
+﻿NEconomy = {
+
+	TRADE_ROUTE_BUREAUCRACY_COST = 8					# The cost in BUR per trade route
+	TRADE_ROUTE_MAX_LEVEL = 9999							# Trade routes cannot be higher level than this
+	TRADE_ROUTE_DEFAULT_GOODS_QUANTITY = 3				# Base quantity traded from trade routes, if not otherwise specified in goods type
+	TRADE_ROUTE_ECONOMY_OF_SCALE = 0.1					# Each level of trade route after the first adds this % to desired trade quantity
+	TRADE_ROUTE_ECONOMY_OF_SCALE_MAX_LEVEL = 150			# After this level, trade route economy of scale no longer increases the amount per level
+	
+	TRADE_ROUTE_AUTO_INCREASE_ACCEPTABLE_REVENUE_DIFFERENCE = 1 # Multiply revenue of new trade route level by this for the purpose of considering whether it's OK to auto-increase level (means that trade routes cannot level up when decreasing overall revenue)
+	TRADE_ROUTE_AUTO_INCREASE_LOW_PRODUCTIVITY_THRESHOLD = 20 # If trade route's productivity would drop below this, don't automatically increase its level (regardless of total revenue)
+	TRADE_ROUTE_AUTO_INCREASE_HIGH_PRODUCTIVITY_THRESHOLD = 500 # If trade route's productivity is above this, it's always fine to automatically increase its level (regardless of total revenue)
+	TRADE_ROUTE_AUTO_REDUCTION_ACCEPTABLE_REVENUE_DIFFERENCE = 1.1 # Multiply revenue of current trade route level by this for the purpose of considering whether we should auto-decrease level (means that trade routes won't level down just for the purpose of a small revenue increase)
+
+} 

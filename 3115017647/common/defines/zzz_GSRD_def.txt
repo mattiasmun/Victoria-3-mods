@@ -1,0 +1,41 @@
+﻿# Grey's Smarter Railways Defines
+
+NAI = {
+	# Below data is used to calculate how much weight the AI places on a production building
+
+	PRODUCTION_BUILDING_NO_AVAILABLE_WORKFORCE_FACTOR = 0.1 # Vanilla = 0.25 - Total weight is multiplied by this if the state lacks enough workforce to staff the building
+	PRODUCTION_BUILDING_FREE_INFRASTRUCTURE_TARGET_WHEN_LACKING_WORKFORCE = 20 # Vanilla = 10 - When lacking workforce, the AI will stop building in the state once available infrastructure is this or less
+	
+	# For Reference:
+	# PRODUCTION_BUILDING_RANDOM_FACTOR = 10.0 # The higher this is, the more random AI construction will be
+	# PRODUCTION_BUILDING_STATE_RANDOM_FACTOR = 1.0 # The higher this is, the more random AI state selection for building types will be
+	# PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR = 5000 # Per pound of predicted building profit (divided by employee count per level)
+	# PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR = 0.25 # Per pound of produced goods in base value
+	# PRODUCTION_BUILDING_OUTPUT_WANTED_INDUSTRIAL_GOODS_FACTOR = 0.25 # Add this value to a building for each unit of money worth of industrial goods that aren't overproduced in the country and are used by buildings
+	# PRODUCTION_BUILDING_OUTPUT_WANTED_MILITARY_GOODS_FACTOR = 0.25 # Add this value to a building for each unit of money worth of military goods that aren't overproduced in the country and are used by buildings
+	# PRODUCTION_BUILDING_OUTPUT_NEEDED_INDUSTRIAL_GOODS_FACTOR = 0.5 # Add this value to a building for each unit of money worth of industrial goods that are underproduced in the country and are used by buildings
+	# PRODUCTION_BUILDING_OUTPUT_NEEDED_MILITARY_GOODS_FACTOR = 0.5 # Add this value to a building for each unit of money worth of military goods that are underproduced in the country and are used by buildings
+	
+	# No touch unnecessary thresholds.
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_WANTED_COST_COVERAGE = 1 # If investment pool has less money than this in it, don't do any autonomous construction
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_CONSTRUCTION_COST_DIVISOR_SCALING = 0.001 # Value for autonomous investment pool constructions is divided by ( 1 + construction point cost * this )
+	
+	# Key lines:
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_RANDOM_FACTOR_MULT = 1.0 # Vanilla = 2.0 - Multiplies PRODUCTION_BUILDING_RANDOM_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_STATE_RANDOM_FACTOR_MULT = 3.0 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_STATE_RANDOM_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_FACTOR_MULT = 2.5 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_VALUE_FACTOR_MULT = 0.5 # Vanilla = 1.25 - Multiplies PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR for autonomous investment pool constructions
+	
+	# Temp untouched
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_MILITARY_GOODS_FACTOR_MULT = 1.0 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_OUTPUT_NEEDED_MILITARY_GOODS_FACTOR & PRODUCTION_BUILDING_OUTPUT_WANTED_MILITARY_GOODS_FACTOR for autonomous investment pool constructions
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_INDUSTRIAL_GOODS_FACTOR_MULT = 4.0 # Vanilla = 4.0 - Multiplies PRODUCTION_BUILDING_OUTPUT_NEEDED_INDUSTRIAL_GOODS_FACTOR & PRODUCTION_BUILDING_OUTPUT_WANTED_INDUSTRIAL_GOODS_FACTOR for autonomous investment pool constructions
+	
+	# Untouched autonomous lines:
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_MODIFIER_FACTOR_MULT = 0.75 # Vanilla = 0.75 - Multiplies value from produced modifiers for autonomous investment pool constructions
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRICE_COMPENSATION_FACTOR_MULT = 1.0 # Vanilla = 1.0 - Multiplies high/low price compensation factors for autonomous investment pool constructions
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_BELOW_DESIRED_INFRASTRUCTURE_FACTOR_MULT = 0.25 # Vanilla = 0.25 - Multiplies PRODUCTION_BUILDING_BELOW_DESIRED_INFRASTRUCTURE_FACTOR for autonomous investment pool constructions
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_LOW_INVESTMENT_FACTOR = 10 	# Vanilla = 10 - If investment proportion of the investing pop type is low (see below), multiply building value by this
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_LOW_INVESTMENT_PROPORTION = 0.66  # Vanilla = 0.66 - If the proportion of expected to previous investments by a pop type is lower or equal to this, apply the above factor
+	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_LOW_INVESTMENT_RESET_TIME = 12  # Vanilla = 12 - Every this number of months, reset the historical construction values for each pop type to ensure system can handle significant economic changes over time
+	
+}
