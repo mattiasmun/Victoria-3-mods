@@ -12,7 +12,7 @@ ec_super = {
 #	country_weekly_innovation_max_add = 300
 #	country_weekly_innovation_mult = 0.2
 #	country_tech_spread_mult = 0.2
-#	country_minting_mult = 0.1
+	country_minting_mult = 0.3
 #	country_loan_interest_rate_add = -0.2
 	country_legitimacy_base_add = 150
 	country_infamy_decay_mult = 5.0
@@ -33,10 +33,10 @@ ec_super = {
 
 	country_tax_income_add = 99999999
 	country_prestige_mult = 0.2
-	country_law_enactment_time_mult = -0.6
-	country_law_enactment_success_add = 0.7
+	country_law_enactment_time_mult = -0.8
+	country_law_enactment_success_add = 0.95
 
-	country_construction_add = 999
+	country_construction_add = 9999
 	country_convoys_capacity_add = 9999
 	country_resource_discovery_chance_mult = 0.5
 	country_resource_depletion_chance_mult = -0.5
@@ -128,6 +128,6 @@ ec_super_v = {
 	building_group_bg_plantations_tax_mult = 0.3
 	building_group_bg_ranching_tax_mult = 0.3
 
-	building_throughput_mult = 1.20
-	building_input_mult = -0.9999
+#	building_throughput_mult = 1.20
+#	building_input_mult = -0.9999
 }

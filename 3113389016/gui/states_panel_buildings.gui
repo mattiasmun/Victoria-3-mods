@@ -375,12 +375,12 @@ types state_panel_types {
 				}	
 			
 				button_icon_round_action = {
-					position = { 30 0 }
+					position = { 45 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 100 arable land, right click to remove 100 arable land"
 						
-					visible = "[State.GetCountry.IsLocalPlayer]"
+					visible = yes
 					onclick = "[GetScriptedGui('se_add_landstate').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 					onrightclick = "[GetScriptedGui('se_add_landstate-').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 
@@ -390,12 +390,12 @@ types state_panel_types {
 				}		
 				
 				button_icon_round_action = {
-					position = { 70 0 }
+					position = { 85 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 1000 arable land, right click to remove 1000 arable land"
 						
-					visible = "[State.GetCountry.IsLocalPlayer]"
+					visible = yes
 					onclick = "[GetScriptedGui('se_add_landstate+').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 					onrightclick = "[GetScriptedGui('se_add_landstate--').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 
@@ -405,12 +405,12 @@ types state_panel_types {
 				}	
 
 				button_icon_round_action = {
-					position = { 110 0 }
+					position = { 125 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 10000 arable land, right click to remove 10000 arable land"
 						
-					visible = "[State.GetCountry.IsLocalPlayer]"
+					visible = yes
 					onclick = "[GetScriptedGui('se_add_landstate++').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 					onrightclick = "[GetScriptedGui('se_add_landstate---').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
 
