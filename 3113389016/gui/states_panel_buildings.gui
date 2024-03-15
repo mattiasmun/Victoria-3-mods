@@ -373,9 +373,39 @@ types state_panel_types {
 				blockoverride "text" {
 					text = "UNUSED_ARABLE"
 				}	
+				
+				button_icon_round_action = {
+					position = { 55 0 }
+					parentanchor = hcenter|vcenter
+					size = { 32 32 }
+					tooltip = "Left click to add 1 arable land, right click to remove 1 arable land"
+						
+					visible = yes
+					onclick = "[GetScriptedGui('se_add_very_low_landstate').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
+					onrightclick = "[GetScriptedGui('se_add_very_low_landstate-').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
+
+					blockoverride "icon" {
+						texture = "gfx/interface/icons/state_status_icons/mass_migration_target.dds"
+					}
+				}
+				
+				button_icon_round_action = {
+					position = { 90 0 }
+					parentanchor = hcenter|vcenter
+					size = { 32 32 }
+					tooltip = "Left click to add 10 arable land, right click to remove 10 arable land"
+						
+					visible = yes
+					onclick = "[GetScriptedGui('se_add_low_landstate').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
+					onrightclick = "[GetScriptedGui('se_add_low_landstate-').Execute( GuiScope.SetRoot( StatesPanel.GetState.MakeScope ).End )]"
+
+					blockoverride "icon" {
+						texture = "gfx/interface/icons/state_status_icons/mass_migration_target.dds"
+					}
+				}
 			
 				button_icon_round_action = {
-					position = { 45 0 }
+					position = { 125 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 100 arable land, right click to remove 100 arable land"
@@ -390,7 +420,7 @@ types state_panel_types {
 				}		
 				
 				button_icon_round_action = {
-					position = { 85 0 }
+					position = { 160 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 1000 arable land, right click to remove 1000 arable land"
@@ -405,7 +435,7 @@ types state_panel_types {
 				}	
 
 				button_icon_round_action = {
-					position = { 125 0 }
+					position = { 195 0 }
 					parentanchor = hcenter|vcenter
 					size = { 32 32 }
 					tooltip = "Left click to add 10000 arable land, right click to remove 10000 arable land"

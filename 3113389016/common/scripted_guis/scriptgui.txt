@@ -1,3 +1,22 @@
+se_add_very_low_landstate = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 1
+		}
+    }
+}
+
+se_add_low_landstate = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = 10
+		}
+    }
+}
+
+
 se_add_landstate = {
     scope = state
     effect = {
@@ -21,6 +40,25 @@ se_add_landstate++ = {
     effect = {
 		state_region = {
 			add_arable_land = 10000
+		}
+    }
+}
+
+
+se_add_very_low_landstate- = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = -1
+		}
+    }
+}
+
+se_add_low_landstate- = {
+    scope = state
+    effect = {
+		state_region = {
+			add_arable_land = -10
 		}
     }
 }
