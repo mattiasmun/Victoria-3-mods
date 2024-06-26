@@ -1,5 +1,4 @@
 ﻿incorporate_states = {
-	
 	is_shown = {
 		any_state = {
 			is_incorporated = no
@@ -8,7 +7,6 @@
 			}
 		}
 	}
-	
 	possible = {
 		any_state = {
 			is_incorporated = no
@@ -17,24 +15,24 @@
 			}
 		}
 	}
-	
 	when_taken = {
-		limit = {
-			any_state = {
-				is_incorporated = no
-				owner = {
-					is_player = yes
+		if = {
+			limit = {
+				any_state = {
+					is_incorporated = no
+					owner = {
+						is_player = yes
+					}
 				}
 			}
-		}
-		every_scope_state = {
-			limit = {
-				is_incorporated = no
+			every_scope_state = {
+				limit = {
+					is_incorporated = no
+				}
+				set_state_type = incorporated
 			}
-			set_state_type = incorporated
 		}
 	}
-	
 	ai_chance = {
 		base = 0
 	}
