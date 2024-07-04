@@ -38,13 +38,30 @@ NAI = {
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_STATE_RANDOM_FACTOR_MULT = 2.5 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_STATE_RANDOM_FACTOR for autonomous investment pool constructions
 	
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_FACTOR_MULT = 2.5 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions
-	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_FACTOR_MULT = 4.0 # Vanilla = 3.0 - Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions, gives higher weight to buildings that have levels to privatize
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_FACTOR_MULT = 5.0 # Vanilla = 3.0 - Multiplies PRODUCTION_BUILDING_GOODS_PROFIT_FACTOR for autonomous investment pool constructions, gives higher weight to buildings that have levels to privatize
 	
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_VALUE_FACTOR_MULT = 0.5 # Vanilla = 1.25 - Multiplies PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR for autonomous investment pool constructions
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PRODUCED_VALUE_PRIVATIZE_FACTOR_MULT = 0.8 # Vanilla = 2.0 - Multiplies PRODUCTION_BUILDING_PRODUCED_VALUE_FACTOR for autonomous investment pool constructions, gives higher weight to buildings that have levels to privatize
 	
-	# Untouched privatize
-	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_SELF_OWNED_BUILDING_MULT = 0.75 # Multiply the total score for privatizing self-owned building levels by this
+	# Increase general desire to privatize
+	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_SELF_OWNED_BUILDING_MULT = 1.2 # Vanilla = 0.75 - Multiply the total score for privatizing self-owned building levels by this
+	
+	# The AI for autonomous investment weights alters the weights for buildings based on how much of the investment pool originates from a certain ownership type building
+	# For example, if a high proportion of investment pool income is from Manor Houses, the building groups that manor houses have high investment weights for are weighted up
+	# Here we clamp the bounds for this effect, ie how low/high is the weight allowed to get
+	AUTONOMOUS_INVESTMENT_MIN_PROPORTIONAL_INVESTMENT_WEIGHT = 0.25 # Vanilla = 0.25
+	AUTONOMOUS_INVESTMENT_MAX_PROPORTIONAL_INVESTMENT_WEIGHT = 0.75 # Vanilla = 1.0
+	
+	# When scoring an ownership building for a new investment, always consider them to be contributing a minimum of this amount of the investment pool
+	# This is to ensure that financial centers can appear in countries that lack them, etc
+	# AUTONOMOUS_INVESTMENT_MIN_OWNERSHIP_BUILDING_INVESTMENT_SHARE = 0.25
+	
+	# Chance for ai to do privatization instead of building a new building level when evaluating an existing building
+	BUILDING_PRIVATIZATION_CHANCE = 90.0  # Vanilla = 50.0
+	
+	
+	
+	
 	
 	# Temp untouched
 	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_MILITARY_GOODS_FACTOR_MULT = 0.8 # Vanilla = 1.5 - Multiplies PRODUCTION_BUILDING_OUTPUT_NEEDED_MILITARY_GOODS_FACTOR & PRODUCTION_BUILDING_OUTPUT_WANTED_MILITARY_GOODS_FACTOR for autonomous investment pool constructions

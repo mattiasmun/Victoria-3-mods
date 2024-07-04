@@ -632,6 +632,24 @@ SM_change_economic_laws.6 {
 		}
 	}
 
+	
+	option = {
+		trigger = {
+			scope:SM_change_laws_target = {
+				NOT = { has_law = law_type:law_frontier_colonization }
+			}
+		}
+		name = law_frontier_colonization
+		scope:SM_change_laws_target = {
+			activate_law = law_type:law_frontier_colonization
+		}
+        trigger_event = {
+			id = SM_change_laws.1
+			days = 0
+			popup = yes
+		}
+	}
+	
 	option = {
 		trigger = {
 			scope:SM_change_laws_target = {

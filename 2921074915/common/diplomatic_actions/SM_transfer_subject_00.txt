@@ -3,6 +3,9 @@ SM_transfer_subject = {
 	requires_approval = no
     should_notify_third_parties = yes
 	show_effect_in_tooltip = yes
+	groups = {
+		general
+	}
     possible = {
         is_at_war = no
 		scope:target_country = {
