@@ -46,6 +46,8 @@ NAI = {
 	# Increase general desire to privatize
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_SELF_OWNED_BUILDING_MULT = 1.2 # Vanilla = 0.75 - Multiply the total score for privatizing self-owned building levels by this
 	
+	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS = 3.0 # Vanilla = 2.0
+	
 	# The AI for autonomous investment weights alters the weights for buildings based on how much of the investment pool originates from a certain ownership type building
 	# For example, if a high proportion of investment pool income is from Manor Houses, the building groups that manor houses have high investment weights for are weighted up
 	# Here we clamp the bounds for this effect, ie how low/high is the weight allowed to get
@@ -57,7 +59,7 @@ NAI = {
 	# AUTONOMOUS_INVESTMENT_MIN_OWNERSHIP_BUILDING_INVESTMENT_SHARE = 0.25
 	
 	# Chance for ai to do privatization instead of building a new building level when evaluating an existing building
-	BUILDING_PRIVATIZATION_CHANCE = 90.0  # Vanilla = 50.0
+	BUILDING_PRIVATIZATION_CHANCE = 80.0  # Vanilla = 50.0
 	
 	
 	
