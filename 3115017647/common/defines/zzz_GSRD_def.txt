@@ -31,6 +31,12 @@ NAI = {
 	# PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_CONSTRUCTION_COST_DIVISOR_SCALING = 0.001 # Value for autonomous investment pool constructions is divided by ( 1 + construction point cost * this )
 	
 	
+	# Government construction applies this multiplier to domestic states when determining where to construct
+	# GOVERNMENT_CONSTRUCTION_DOMESTIC_INVESTMENT_BIAS = 2.0
+	# GOVERNMENT_CONSTRUCTION_SUBJECT_INVESTMENT_BIAS = 1.5
+	# Untouched for now.
+	
+	
 	# AUTONOMOUS BUILDING WEIGHTS
 	
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_CONSTRUCTION_COST_DIVISOR_SCALING = 0 # Vanilla = 0.001 - Value for autonomous investment pool constructions is divided by ( 1 + construction point cost * this )# Key lines:
@@ -47,6 +53,7 @@ NAI = {
 	PRODUCTION_BUILDING_AUTONOMOUS_INVESTMENT_PROFIT_PRIVATIZE_SELF_OWNED_BUILDING_MULT = 1.2 # Vanilla = 0.75 - Multiply the total score for privatizing self-owned building levels by this
 	
 	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS = 3.0 # Vanilla = 2.0
+	AUTONOMOUS_INVESTMENT_DOMESTIC_INVESTMENT_BIAS_MAX = 10.0 # Vanilla = 10.0
 	
 	# The AI for autonomous investment weights alters the weights for buildings based on how much of the investment pool originates from a certain ownership type building
 	# For example, if a high proportion of investment pool income is from Manor Houses, the building groups that manor houses have high investment weights for are weighted up
