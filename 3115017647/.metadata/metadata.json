@@ -4,7 +4,12 @@
   "version" : "",
   "supported_game_version" : "",
   "short_description" : "",
-  "tags" : [],
+  "tags" : [
+        "Balance",
+        "Economy And Buildings",
+        "Fixes",
+        "Gameplay"
+    ],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true

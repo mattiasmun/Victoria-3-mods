@@ -1,8 +1,8 @@
 {
   "name" : "Palm Oil on Millet Farm",
   "id" : "millet_palm_oil",
-  "version" : "1.0.3",
-  "supported_game_version" : "1.5.*",
+  "version" : "1.0.4",
+  "supported_game_version" : "1.8.*",
   "short_description" : "Simple mod adding palm oil in the form of a secondary production method for millet farms. Activating this method reduces grain output by 15 and adds 10 units of oil as output per building level.",
   "tags" : [],
   "relationships" : [],
